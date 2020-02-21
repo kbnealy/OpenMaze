@@ -1,0 +1,454 @@
+{
+    "OutputTimesPerSecond": 30,
+    "TrialLoadingDelay": 1.0,
+    "IgnoreUserInputDelay": 1.0,
+    "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
+    "CharacterData": {
+        "Height": 2,
+        "MovementSpeed": 5.0,
+        "RotationSpeed": 75.0,
+        "DistancePickup": 2,
+        "GoalRotationSpeed": 0
+    },
+
+"BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
+   
+    "BlockOrder" : [1,2,3],
+    
+    "BlockList" : [
+        {
+            "BlockName" : "Block 1 - Explore",
+              "Notes" : "This is a standard block of trials.",
+              "TrialOrder": [
+                 1,2,3,4,5,19,18,8,
+                 5,19,18
+                ]
+        },
+        {
+            "BlockName" : "Block 2 - Money Instructions",
+              "Notes" : "This is a standard block of trials.",
+              "TrialOrder": [
+                 9,10,12,4,14,20,11,16,13,8
+                ]
+        },
+        {
+            
+              "BlockName" : "Block 3 - Learning",
+              "Notes" : "This is a block of trials with replacement and randomness.",
+              "TrialOrder": [
+                14,21, 15,27, 9,28
+                ]
+        }
+    ],
+
+"TRIAL DATA" : "TRIAL DATA--------------------*********------------------TRIAL DATA",
+    
+    "TrialData": [
+        {
+            "1" : "Welcome",
+            "Instructional": 1,
+            "FileLocation": "Square/Welcome.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "2" : "Controls",
+            "Instructional": 1,
+            "FileLocation": "Square/Controls.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "3" : "TopDown",
+            "Instructional": 1,
+            "FileLocation": "Square/TopDown.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "4" : "Together",
+            "Instructional": 1,
+            "FileLocation": "Square/Together.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "5" : "Explore",
+            "Instructional": 1,
+            "FileLocation": "Square/Explore.png",
+            "TrialTime": 0,
+            "TrialEndKey": "p"
+        },
+        {
+            "6" : "Bonus",
+            "Instructional": 1,
+            "FileLocation": "Square/Bonus.png",
+            "TrialTime": 0,
+            "TrialEndKey": "p"
+        },
+        {
+            "7" : "ExploreAlone",
+            "Instructional": 1,
+            "FileLocation": "Square/ExploreAlone.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "8" : "Questions",
+            "Instructional": 1,
+            "FileLocation": "Square/Questions.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "9" : "Notify",
+            "Instructional": 1,
+            "FileLocation": "Square/Notify.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "10" : "Finding Money",
+            "Instructional": 1,
+            "FileLocation": "Square/FindingMoney.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "11" : "Money Collection Rounds",
+            "Instructional": 1,
+            "FileLocation": "Square/Rounds.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "12" : "Headphones",
+            "Instructional": 1,
+            "FileLocation": "Square/Headphones.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "13" : "Bonus",
+            "Instructional": 1,
+            "FileLocation": "Square/Bonus.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "14" : "Money",
+            "Instructional": 1,
+            "FileLocation": "Square/Money.png",
+            "TrialTime": 0,
+            "TrialEndKey": "p"
+        },
+        {
+            "15" : "MoneyNF",
+            "Instructional": 1,
+            "FileLocation": "Square/MoneyNF.png",
+            "TrialTime": 0,
+            "TrialEndKey": "p"
+        },
+        {
+            "16" : "No Feedback Rounds",
+            "Instructional": 1,
+            "FileLocation": "Square/RoundsNF.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "17" : "Break",
+            "Instructional": 1,
+            "FileLocation": "Square/Break.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "18": "Where were you?----------------------------------------------------------------------------------------2D/3D",
+            "TwoDimensional" : 1,
+            "Header": "Where Were You?",
+            "Scene" : 3,
+            "TrialTime" : 1000,
+            "TrialEndKey": "Space"
+
+        }, 
+        {
+            "19" : "3D - simple square - No Goals",
+            "Header": "Explore!",
+            "ShowCollectedPerBlock" : false,
+            "TrialTime" : 30,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "MazeName": "Square",
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "x"
+        },
+        {
+            "20" : "3D - simple square - No Goals",
+            "Header": "Find $0.10!",
+            "ShowCollectedPerBlock" : true,
+            "TrialTime" : 1000,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [6],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "MazeName": "Square",
+            "Quota": 20,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "x"
+        },
+        {
+            "21" : "3D - simple square - No Goals",
+            "Header": "Search For Money!",
+            "ShowCollectedPerBlock" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [1],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "MazeName": "Square",
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "x"
+        },
+        {
+            "22" : "3D - simple square - No Goals",
+            "Header": "Search For Money!",
+            "ShowCollectedPerBlock" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [2],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "MazeName": "Square",
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "x"
+        },
+        {
+            "23" : "3D - simple square - No Goals",
+            "Header": "Search For Money!",
+            "ShowCollectedPerBlock" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [3],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "MazeName": "Square",
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "x"
+        },
+        {
+            "24" : "3D - simple square - No Goals",
+            "Header": "Search For Money!",
+            "ShowCollectedPerBlock" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [4],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "MazeName": "Square",
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "x"
+        },
+        {
+            "25" : "3D - simple square - No Goals",
+            "Header": "Search For Money!",
+            "ShowCollectedPerBlock" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [5],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "MazeName": "Square",
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "x"
+        },
+        {
+            "26" : "3D - simple square - No Goals",
+            "Header": "Search For Money!",
+            "ShowCollectedPerBlock" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [6],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "MazeName": "Square",
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "x"
+        },
+        {
+            "27" : "3D - simple square - No Goals",
+            "Header": "Search For Money!",
+            "ShowCollectedPerBlock" : false,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "MazeName": "Square",
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "x"
+        },
+        {
+            "28" : "3D - simple square - No Goals",
+            "Header": "NO FEEDBACK BONUS: $0.52",
+            "ShowCollectedPerBlock" : true,
+            "TrialTime" : 60,
+            "Scene": 6,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Quota": 5000,
+            "LandMarks" :[],
+            "TrialEndKey": "x"
+        }
+    ],
+
+
+"GOAL DATA" : "GOAL DATA--------------------*********------------------GOAL DATA",
+
+    "Goals": [
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "RewardZone",
+            "Color": "ff0000",
+            "Position": [4.1, 1, 4.75],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "RewardZone",
+            "Color": "ff0000",
+            "Position": [5, 1, 6.7],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "RewardZone",
+            "Color": "ff0000",
+            "Position": [9.7, 1, 5.7],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "RewardZone",
+            "Color": "ff0000",
+            "Position": [8, 1, 6.5],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "RewardZone",
+            "Color": "ff0000",
+            "Position": [7, 1, 9],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "RewardZone",
+            "Color": "ff0000",
+            "Position": [3.5, 1, 7.75],
+            "Scale": [1, 1, 1]
+        }
+
+    ],
+
+"LANDMARK DATA" : "LANDMARK DATA----------*********------------------LANDMARK DATA",
+
+    "Landmarks": [
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "Sphere",
+            "Color": "ff0000",
+            "Position": [30, 18, 0],
+            "Scale": [0.1, 8, 8]
+        },
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "Cube",
+            "Color": "00ff00",
+            "Position": [0, 18, -30],
+            "Scale": [8,8,0.1]
+        },
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "Cube",
+            "Color": "0000ff",
+            "Position": [0, 16, 30],
+            "Scale": [16,4,0.1]
+        },
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "Prism",
+            "Color": "ffff00",
+            "Position": [-30,14,4],
+            "Rotation": [0,90,0],
+            "Scale": [8, 8, 0.1]
+        },
+        {
+            "Pickup 3" : "Food Image",
+            "Type": "RewardZone",
+            "Color": "ff0000",
+            "Position": [10, 1, 10],
+            "Scale": [1, 1, 1]
+        }
+
+    ], 
+
+"Maze DATA" : "Maze DATA--------------------*********------------------Maze DATA",
+
+    "Mazes": [
+                {
+            "MazeName": "Square",
+            "Type": "Simple",
+            "Sides": 4,
+            "Radius": 15,
+            "WallHeight" : 7,
+            "WallColor": "ffffff",
+            "GroundTileSides": 4,
+            "GroundTileSize": 1,
+            "GroundColor": "ffffff",
+            "Position": [0, 0],
+            "InitialRotation": 0
+        }
+    ]
+}
