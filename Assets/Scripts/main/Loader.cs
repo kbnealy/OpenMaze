@@ -76,26 +76,9 @@ namespace main
                     var PositionZ = t.position.z.ToString();
                     var RotationY = t.eulerAngles.y.ToString();
                     var LoadingTime = 0.0;
+                    
                     var timeSinceExperimentStart = DateTimeOffset.Now.ToUnixTimeMilliseconds() - DataSingleton.GetData().ExperimentStartTime;
                     var timeSinceTrialStart = DateTimeOffset.Now.ToUnixTimeMilliseconds() - trialStartTime;
-
-                    // If we're in a loading delay period we want to output that
-                    // instead of TrialID;
-                    if (s.isLoaded == false)
-                    {
-                        trialIdStr = "Loading";
-                        PositionX = "NA";
-                        PositionZ = "NA";
-                        RotationY = "NA";
-                        LoadingTime = DateTimeOffset.Now.ToUnixTimeMilliseconds() - trialStartTime;
-                    }
-
-                    if (s.Instructional == 1 & LoadingTime != 0)
-                    {
-                        PositionX = "NA";
-                        PositionZ = "NA";
-                        RotationY = "NA";
-                    }
 
                     if(s.Instructional == 1)
                     {
@@ -103,8 +86,6 @@ namespace main
                         PositionZ = "NA";
                         RotationY = "NA";
                     }
-
-
 
                     var str = string.Format(
                         "{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, " +
