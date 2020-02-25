@@ -42,9 +42,9 @@ namespace wallSystem
             {
                 Timer.text = "Number of successes: " + E.Get().CurrTrial.TrialProgress.NumSuccess;
             }
-            else if (DS.GetData().Blocks[currBlockId].ShowCollectedPerTrial)
+            else if (DS.GetData().Trials[currTrialId].ShowCollectedPerTrial)
             {
-                Timer.text = "Goals found this trial: " + E.Get().CurrTrial.NumCollected;
+                Timer.text = "Round Total: " + E.Get().CurrTrial.NumCollected;
             }
             else if (DS.GetData().Trials[currTrialId].ShowCollectedPerBlock)
             {

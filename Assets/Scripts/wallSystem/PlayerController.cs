@@ -160,19 +160,21 @@ namespace wallSystem
 
             // Tally the number collected per current block
             int BlockID = TrialProgress.GetCurrTrial().BlockID;
-            TrialProgress.GetCurrTrial().TrialProgress.NumCollectedPerBlock[BlockID]++;
 
-            TrialProgress.GetCurrTrial().NumCollected++;
-            E.LogData(
-                TrialProgress.GetCurrTrial().TrialProgress,
-                TrialProgress.GetCurrTrial().TrialStartTime,
-                transform,
-                1
-            );
+            if (localQuota > 0)
+            {
+                TrialProgress.GetCurrTrial().TrialProgress.NumCollectedPerBlock[BlockID]++;
+
+                TrialProgress.GetCurrTrial().NumCollected++;
+                E.LogData(
+                    TrialProgress.GetCurrTrial().TrialProgress,
+                    TrialProgress.GetCurrTrial().TrialStartTime,
+                    transform,
+                    1
+                );
+            }
 
             if (--localQuota > 0) return;
-
-            E.Get().CurrTrial.Notify();
 
             _playingSound = true;
         }
@@ -206,6 +208,7 @@ namespace wallSystem
             {
                 if (!GetComponent<AudioSource>().isPlaying)
                 {
+                    E.Get().CurrTrial.Notify();
                     TrialProgress.GetCurrTrial().Progress();
                     _playingSound = false;
                 }

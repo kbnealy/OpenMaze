@@ -36,7 +36,6 @@ namespace main
             if (numSuccessfulInPrevious.Length == 2)
             {
                 int previousTrialsToCheck = int.Parse(numSuccessfulInPrevious[1]);
-
                 // Continue if we haven't reached the required run length
                 if (tp.successes.Count < previousTrialsToCheck) return true;
 

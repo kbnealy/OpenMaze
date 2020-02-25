@@ -56,7 +56,7 @@ namespace main
             using (var writer = new StreamWriter("Assets/OutputFiles~/" + DS.GetData().OutputFile, false))
             {
                 writer.Write(
-                    "StartField1, StartField2, StartField3, StartField4, TimeStamp, TrialState, TrialTime, LoadingTime, BlockIndex, TrialIndex, TrialInBlock, Instructional, 2D, Scene, Enclosure, PositionX, PositionZ, RotationY, " +
+                    "StartField1, StartField2, StartField3, StartField4, TimeStamp, BlockIndex, TrialIndex, TrialInBlock, Instructional, 2D, Scene, Enclosure, PositionX, PositionZ, RotationY, " +
                     "Collision, GoalX, GoalZ, LastX, LastZ, UpArrow, DownArrow," +
                     " LeftArrow, RightArrow, Space"
                 + "\n");
@@ -89,8 +89,8 @@ namespace main
 
                     var str = string.Format(
                         "{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, " +
-                        "{12}, {13}, {14}, {15}, {16}, {17}, {18}, {19}, {20}, {21}, {22}, {23}, {24}, {25}, {26}, {27}",
-                        s.Subject, s.Condition, s.SessionID, s.Note, DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt"), trialIdStr, DateTimeOffset.Now.ToUnixTimeMilliseconds() - trialStartTime, LoadingTime, s.BlockID + 1, s.TrialID + 1, s.TrialNumber + 1, s.Instructional, s.TwoDim, s.EnvironmentType, s.CurrentEnclosureIndex + 1, PositionX, PositionZ, RotationY,
+                        "{12}, {13}, {14}, {15}, {16}, {17}, {18}, {19}, {20}, {21}, {22}, {23}, {24}",
+                        s.Subject, s.Condition, s.SessionID, s.Note, DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss.fff tt"), s.BlockID + 1, s.TrialID + 1, s.TrialNumber + 1, s.Instructional, s.TwoDim, s.EnvironmentType, s.CurrentEnclosureIndex + 1, PositionX, PositionZ, RotationY,
                         targetFound, s.TargetX, s.TargetY, s.LastX, s.LastY,
                         Input.GetKey(KeyCode.UpArrow) ? 1 : 0,
                         Input.GetKey(KeyCode.DownArrow) ? 1 : 0, Input.GetKey(KeyCode.LeftArrow) ? 1 : 0,

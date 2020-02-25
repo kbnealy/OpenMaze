@@ -13,7 +13,7 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [3],
+    "BlockOrder" : [3,4],
     
     "Blocks" : [
         {
@@ -41,7 +41,9 @@
             
               "BlockName" : "Block 3 - Learning",
               "Notes" : "This is a block of trials with replacement and randomness.",
-              "EndGoal": 3,
+              "EndGoal": "2 4",
+              "EndFunction": "CheckFoodThresholdPercentage",
+              "ShowNumSuccessfulTrials": true,
               "TrialOrder": [
                 10,18, 10,18, 10,18,
                 11,22,
@@ -53,6 +55,15 @@
                 11,22,
                 23
               ]
+        },
+        {
+            "BlockName" : "Block 2 - Money Instructions",
+              "Notes" : "This is a standard block of trials.",
+              "TrialOrder": [
+                 6,7,9,4,
+                 10,17,
+                 8,12,13,4
+                ]
         }
     ],
 
@@ -186,7 +197,7 @@
         {
             "17" : "Collect $0.02",
             "Header": "Find $0.10!",
-            "ShowCollectedPerBlock" : true,
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 10000,
             "Scene": 4,
             "StartPosition" : [],
@@ -203,7 +214,7 @@
         {
             "18" : "Reward Location 1",
             "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
             "StartPosition" : [],
@@ -220,7 +231,7 @@
         {
             "19" : "Reward Location 2",
             "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
             "StartPosition" : [],
@@ -237,7 +248,7 @@
         {
             "20" : "Reward Location 3",
             "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
             "StartPosition" : [],
@@ -254,7 +265,7 @@
         {
             "21" : "Reward Location 4",
             "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
             "StartPosition" : [],
