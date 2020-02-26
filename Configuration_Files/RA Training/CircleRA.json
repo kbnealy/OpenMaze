@@ -1,7 +1,8 @@
 {
     "OutputTimesPerSecond": 30,
     "TrialLoadingDelay": 1.0,
-    "IgnoreUserInputDelay": 1.0,
+    "IgnoreUserInputDelay": 1,
+    "MorrisMazeThreshold": 0,
     "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
     "CharacterData": {
         "Height": 2,
@@ -15,7 +16,7 @@
    
     "BlockOrder" : [1,2,3],
     
-    "BlockList" : [
+    "Blocks" : [
         {
             "BlockName" : "Block 1 - Explore",
               "Notes" : "This is a standard block of trials.",
@@ -43,7 +44,7 @@
 
 "TRIAL DATA" : "TRIAL DATA--------------------*********------------------TRIAL DATA",
     
-    "TrialData": [
+    "Trials": [
         {
             "1" : "Welcome",
             "Instructional": 1,
@@ -76,14 +77,14 @@
             "5" : "Explore",
             "Instructional": 1,
             "FileLocation": "Circle/Explore.png",
-            "TrialTime": 0,
+            "TrialTime": 1,
             "TrialEndKey": "p"
         },
         {
             "6" : "Bonus",
             "Instructional": 1,
             "FileLocation": "Circle/Bonus.png",
-            "TrialTime": 0,
+            "TrialTime": -1,
             "TrialEndKey": "p"
         },
         {
@@ -139,14 +140,14 @@
             "14" : "Money",
             "Instructional": 1,
             "FileLocation": "Circle/Money.png",
-            "TrialTime": 0,
+            "TrialTime": 1,
             "TrialEndKey": "p"
         },
         {
             "15" : "MoneyNF",
             "Instructional": 1,
             "FileLocation": "Circle/MoneyNF.png",
-            "TrialTime": 0,
+            "TrialTime": 1,
             "TrialEndKey": "p"
         },
         {
@@ -173,26 +174,26 @@
 
         }, 
         {
-            "19" : "3D - simple square - No Goals",
+            "19" : "Explore",
             "Header": "Explore!",
-            "ShowCollectedPerBlock" : false,
+            "ShowCollectedPerTrial" : false,
             "TrialTime" : 30,
             "Scene": 2,
-            "StartPosition" : [],
+            "StartPosition" : [0,0],
             "StartFacing" : -1,
             "Rotate": 0,
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
+            "Enclosure": 1,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
-            "20" : "3D - simple square - No Goals",
-            "Header": "Find $0.10!",
-            "ShowCollectedPerBlock" : true,
+            "20" : "Practice Finding - Collect 30 points",
+            "Header": "Collect 30 Points!",
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 1000,
             "Scene": 2,
             "StartPosition" : [],
@@ -201,15 +202,15 @@
             "ActiveGoals" : [6],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
-            "Quota": 20,
+            "Enclosure": 1,
+            "Quota": 30,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
-            "21" : "3D - simple square - No Goals",
-            "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "21" : "Reward Location 1",
+            "Header": "Collect Points!",
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
             "StartPosition" : [],
@@ -218,15 +219,15 @@
             "ActiveGoals" : [1],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
+            "Enclosure": 1,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
-            "22" : "3D - simple square - No Goals",
-            "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "22" : "Reward Location 2",
+            "Header": "Collect Points!",
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
             "StartPosition" : [],
@@ -235,15 +236,15 @@
             "ActiveGoals" : [2],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
+            "Enclosure": 1,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
-            "23" : "3D - simple square - No Goals",
-            "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "23" : "Reward Location 3",
+            "Header": "Collect Points!",
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
             "StartPosition" : [],
@@ -252,15 +253,15 @@
             "ActiveGoals" : [3],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
+            "Enclosure": 1,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
-            "24" : "3D - simple square - No Goals",
-            "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "24" : "Reward Location 4",
+            "Header": "Collect Points!",
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
             "StartPosition" : [],
@@ -269,15 +270,15 @@
             "ActiveGoals" : [4],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
+            "Enclosure": 1,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
-            "25" : "3D - simple square - No Goals",
-            "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "25" : "Reward Location 5",
+            "Header": "Collect Points!",
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
             "StartPosition" : [],
@@ -286,15 +287,15 @@
             "ActiveGoals" : [5],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
+            "Enclosure": 1,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
-            "26" : "3D - simple square - No Goals",
-            "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : true,
+            "26" : "Reward Location 6",
+            "Header": "Collect Points!",
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
             "StartPosition" : [],
@@ -303,15 +304,15 @@
             "ActiveGoals" : [6],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
+            "Enclosure": 1,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
-            "27" : "3D - simple square - No Goals",
-            "Header": "Search For Money!",
-            "ShowCollectedPerBlock" : false,
+            "27" : "Catch Trial",
+            "Header": "Collect Points!",
+            "ShowCollectedPerTrial" : false,
             "TrialTime" : 60,
             "Scene": 2,
             "StartPosition" : [],
@@ -320,15 +321,15 @@
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
+            "Enclosure": 1,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
-            "28" : "3D - simple square - No Goals",
+            "28" : "End Trial",
             "Header": "NO FEEDBACK BONUS: $0.47",
-            "ShowCollectedPerBlock" : true,
+            "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 6,
             "StartPosition" : [],
@@ -348,103 +349,117 @@
 
     "Goals": [
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "1" : "Reward Location 1",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [4.1, 1, 4.75],
+            "Position": [4.1, 1, -4.75],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "2" : "Reward Location 2",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [5, 1, 6.7],
+            "Position": [8, 1, -6.5],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "3" : "Reward Location 3",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [9.7, 1, 5.7],
+            "Position": [3.5, 1, -7.75],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "4" : "Reward Location 4",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [8, 1, 6.5],
+            "Position": [7, 1, -3.5],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "5" : "Reward Location 5",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [7, 1, 9],
+            "Position": [7, 1, -9],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "6" : "Reward Location 6",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [3.5, 1, 7.75],
+            "Position": [9.7, 1, -5.7],
             "Scale": [1, 1, 1]
         }
 
     ],
 
-"LANDMARK DATA" : "LANDMARK DATA----------*********------------------LANDMARK DATA",
+"LANDMARK DATA" : "These are the Shapes that appear floating on each wall",
 
     "Landmarks": [
         {
-            "Pickup 3" : "Food Image",
-            "Type": "Sphere",
+            "1" : "Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
             "Color": "ff0000",
             "Position": [30, 18, 0],
             "Scale": [0.1, 8, 8]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "Cube",
+            "2" : "Green Cube",
+            "Type": "3D",
+            "Object": "Cube",
             "Color": "00ff00",
             "Position": [0, 18, -30],
             "Scale": [8,8,0.1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "Cube",
+            "3" : "Blue Rectangle",
+            "Type": "3D",
+            "Object": "Cube",
             "Color": "0000ff",
             "Position": [0, 16, 30],
             "Scale": [16,4,0.1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "Prism",
+            "4" : "Yellow Triangle",
+            "Type": "3D",
+            "Object": "Prism",
             "Color": "ffff00",
             "Position": [-30,14,4],
             "Rotation": [0,90,0],
             "Scale": [8, 8, 0.1]
-        },
-        {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
-            "Color": "ff0000",
-            "Position": [10, 1, 10],
-            "Scale": [1, 1, 1]
         }
 
     ], 
 
-"Maze DATA" : "Maze DATA--------------------*********------------------Maze DATA",
+"Enclosures DATA" : "Maze DATA--------------------*********------------------Maze DATA",
 
-    "Mazes": [
-                {
-            "MazeName": "Square",
-            "Type": "Simple",
+    "Enclosures": [
+        {
+        	"1": "Circle",
             "Sides": 40,
             "Radius": 15,
             "WallHeight" : 7,
             "WallColor": "ffffff",
-            "GroundTileSides": 4,
+            "GroundTileSides": 0,
+            "GroundTileSize": 1,
+            "GroundColor": "ffffff",
+            "Position": [0, 0],
+            "InitialRotation": 0
+        },
+        {
+        	"2": "Square",
+            "Sides": 4,
+            "Radius": 15,
+            "WallHeight" : 7,
+            "WallColor": "ffffff",
+            "GroundTileSides": 0,
             "GroundTileSize": 1,
             "GroundColor": "ffffff",
             "Position": [0, 0],

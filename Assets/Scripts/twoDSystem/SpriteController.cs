@@ -18,8 +18,11 @@ namespace twoDSystem
 			//This calculates the current amount of rotation frame rate independent
 			var rotation = Input.GetAxis("Horizontal") * DS.GetData().CharacterData.RotationSpeed * Time.deltaTime;
 
-			//This calculates the forward speed frame rate independent
-			var moveDirection = new Vector3(0, Input.GetAxis("Vertical"), 0);
+            //Update output
+            E.LogData(TrialProgress.GetCurrTrial().TrialProgress, TrialProgress.GetCurrTrial().TrialStartTime, transform);
+
+            //This calculates the forward speed frame rate independent
+            var moveDirection = new Vector3(0, Input.GetAxis("Vertical"), 0);
 			moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= DS.GetData().CharacterData.MovementSpeed;
 

@@ -26,6 +26,8 @@ namespace trial
 
         public int NumCollected; // The number of goals collected for this trial
 
+        public int MegaBonus; // Morris Maze specific parameter for mega bonus points. 
+
         public TrialProgress TrialProgress;
 
         // This points to the start of the block of trials (if present)

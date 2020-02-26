@@ -15,6 +15,7 @@ namespace trial
 
         public List<int> successes; // Whether a trial was a success or not (1 or 0).
         public int[] NumCollectedPerBlock; // Number of goals during each block.
+        public int MegaBonus; // Number of mega bous points 
         public int TrialNumber;
         public int EnvironmentType;
         public bool TimingVerification; // timing diagnostics boolean

@@ -44,12 +44,39 @@ namespace wallSystem
             }
             else if (DS.GetData().Trials[currTrialId].ShowCollectedPerTrial)
             {
-                Timer.text = "Round Total: " + E.Get().CurrTrial.NumCollected;
+                if (DS.GetData().MorrisMazeThreshold != 0)
+                {
+                    if (E.Get().CurrTrial.NumCollected <= DS.GetData().MorrisMazeThreshold)
+                    {
+                        Timer.text = "Round Bonus: " + E.Get().CurrTrial.NumCollected + "/" + DS.GetData().MorrisMazeThreshold;
+                        Timer.color = Color.red;
+                        var goalText = GameObject.Find("Goal").GetComponent<Text>();
+                        goalText.color = Color.green;
+                    }
+                    else
+                    {
+                        Timer.text = "Round Bonus Complete! MEGABONUS POINTS: " + (E.Get().CurrTrial.NumCollected - DS.GetData().MorrisMazeThreshold);
+                        Timer.color = Color.green;
+                        var goalText = GameObject.Find("Goal").GetComponent<Text>();
+                        goalText.color = Color.green;
+                    }
+                    //Timer.text = "Trial Bonus Complete! Keep Collecting for Mega BONUS!: " + E.Get().CurrTrial.NumCollected;
+                }
+                else
+                {
+                    Timer.text = "Points Collected: " + E.Get().CurrTrial.NumCollected;
+                    Timer.color = Color.green;
+                    var goalText = GameObject.Find("Goal").GetComponent<Text>();
+                    goalText.color = Color.green;
+                }
+
             }
             else if (DS.GetData().Trials[currTrialId].ShowCollectedPerBlock)
             {
                 Timer.text = "Goals found this block: " + E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId];
             }
+            
+
         }
     }
 }

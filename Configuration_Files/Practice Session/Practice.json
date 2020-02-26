@@ -2,6 +2,7 @@
     "OutputTimesPerSecond": 30,
     "TrialLoadingDelay": 1.0,
     "IgnoreUserInputDelay": 1.0,
+    "MorrisMazeThreshold": 0,
     "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
     "CharacterData": {
         "Height": 2,
@@ -13,7 +14,7 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [3,4],
+    "BlockOrder" : [1,2,3],
     
     "Blocks" : [
         {
@@ -29,7 +30,7 @@
                 ]
         },
         {
-            "BlockName" : "Block 2 - Money Instructions",
+            "BlockName" : "Block 2 - Points Collection Instructions",
               "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
                  6,7,9,4,
@@ -39,7 +40,7 @@
         },
         {
             
-              "BlockName" : "Block 3 - Learning",
+              "BlockName" : "Block 3 - Points Collection Rounds",
               "Notes" : "This is a block of trials with replacement and randomness.",
               "EndGoal": "2 4",
               "EndFunction": "CheckFoodThresholdPercentage",
@@ -55,15 +56,6 @@
                 11,22,
                 23
               ]
-        },
-        {
-            "BlockName" : "Block 2 - Money Instructions",
-              "Notes" : "This is a standard block of trials.",
-              "TrialOrder": [
-                 6,7,9,4,
-                 10,17,
-                 8,12,13,4
-                ]
         }
     ],
 
@@ -195,8 +187,8 @@
             "TrialEndKey": "x"
         },
         {
-            "17" : "Collect $0.02",
-            "Header": "Find $0.10!",
+            "17" : "Collect 30 points - Practice",
+            "Header": "Collect 30 Points",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 10000,
             "Scene": 4,
@@ -207,13 +199,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 30,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
         {
             "18" : "Reward Location 1",
-            "Header": "Search For Money!",
+            "Header": "Collect Points!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
@@ -224,13 +216,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 1000,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
         {
             "19" : "Reward Location 2",
-            "Header": "Search For Money!",
+            "Header": "Collect Points!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
@@ -241,13 +233,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 1000,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
         {
             "20" : "Reward Location 3",
-            "Header": "Search For Money!",
+            "Header": "Collect Points!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
@@ -258,13 +250,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 1000,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
         {
             "21" : "Reward Location 4",
-            "Header": "Search For Money!",
+            "Header": "Collect Points!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
@@ -275,13 +267,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 1000,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
         {
             "22" : "Catch Trial",
-            "Header": "Search For Money!",
+            "Header": "Collect Points!",
             "ShowCollectedPerBlock" : false,
             "TrialTime" : 60,
             "Scene": 4,
@@ -292,7 +284,7 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 50000,
+            "Quota": 1000,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },

@@ -30,6 +30,9 @@ namespace data
         // how often data is outputted. 
         public int OutputTimesPerSecond;
 
+        //Specific to the Morris Maze Experiment - sets reward threshold for trials instead of having to change codebase everytime
+        public int MorrisMazeThreshold;
+
         //This is the object (defined below) which contains all data available for the main player
         public Character CharacterData;
 
@@ -95,6 +98,7 @@ namespace data
             public float StartFacing; // The starting angle of the character (in degrees). if set to -1 start facing will be random
             public bool ShowCollectedPerTrial; // Whether or not to display the amount of goals/pickups collected (resets each trial)
             public bool ShowCollectedPerBlock; // Whether or not to display the amount of goals/pickups collected (resets each block)
+            public bool ShowTotals; // this is a Morris maze specific parameter that shows the totals from the experiment. 
         }
 
         // Represents an Enclosure (Maze) for the user. TODO: Enclosures can be prebuilt; located in:...

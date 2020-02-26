@@ -47,7 +47,6 @@ namespace wallSystem
 
                 // This section sets the text
                 goalText.text = E.Get().CurrTrial.trialData.Header;
-                goalText.color = Color.white;
             }
             catch (NullReferenceException e)
             {
@@ -173,6 +172,7 @@ namespace wallSystem
                     1
                 );
             }
+
 
             if (--localQuota > 0) return;
 
