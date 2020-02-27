@@ -40,23 +40,27 @@ namespace wallSystem
 
             if (DS.GetData().Blocks[currBlockId].ShowNumSuccessfulTrials)
             {
-                Timer.text = "Number of successes: " + E.Get().CurrTrial.TrialProgress.NumSuccess;
+                var goalText = GameObject.Find("Goal").GetComponent<Text>();
+                goalText.color = Color.green;
+                goalText.text = "Number of successes: " + E.Get().CurrTrial.TrialProgress.NumSuccess + "/3";
             }
-            else if (DS.GetData().Trials[currTrialId].ShowCollectedPerTrial)
+            if (DS.GetData().Trials[currTrialId].ShowCollectedPerTrial)
             {
                 if (DS.GetData().MorrisMazeThreshold != 0)
                 {
                     if (E.Get().CurrTrial.NumCollected <= DS.GetData().MorrisMazeThreshold)
                     {
-                        Timer.text = "Round Bonus: " + E.Get().CurrTrial.NumCollected + "/" + DS.GetData().MorrisMazeThreshold;
-                        Timer.color = Color.red;
+                        var CollectionText = GameObject.Find("CountDown").GetComponent<Text>();
+                        CollectionText.text = "Money Collected: $" +  E.Get().CurrTrial.NumCollected*0.01f + "/" + DS.GetData().MorrisMazeThreshold*0.01f;
+                        CollectionText.color = Color.red;
                         var goalText = GameObject.Find("Goal").GetComponent<Text>();
                         goalText.color = Color.green;
                     }
                     else
                     {
-                        Timer.text = "Round Bonus Complete! MEGABONUS POINTS: " + (E.Get().CurrTrial.NumCollected - DS.GetData().MorrisMazeThreshold);
-                        Timer.color = Color.green;
+                        var CollectionText = GameObject.Find("CountDown").GetComponent<Text>();
+                        CollectionText.text = "Round Bonus Complete! MEGABONUS POINTS: " + (E.Get().CurrTrial.NumCollected - DS.GetData().MorrisMazeThreshold);
+                        CollectionText.color = Color.green;
                         var goalText = GameObject.Find("Goal").GetComponent<Text>();
                         goalText.color = Color.green;
                     }
@@ -64,7 +68,7 @@ namespace wallSystem
                 }
                 else
                 {
-                    Timer.text = "Points Collected: " + E.Get().CurrTrial.NumCollected;
+                    Timer.text = "Money Collected: $" + E.Get().CurrTrial.NumCollected*0.01f;
                     Timer.color = Color.green;
                     var goalText = GameObject.Find("Goal").GetComponent<Text>();
                     goalText.color = Color.green;

@@ -33,7 +33,8 @@ namespace twoDSystem
             goalText.color = Color.black;
 
             Generate2dWalls();
-            Generate2dLandmarks();
+            //Removed the Generate landmarks code for MM experiment
+            //Generate2dLandmarks(); 
             var previousTrial = E.Get().CurrTrial.TrialProgress.PreviousTrial;
             GameObject.Find("Plane").transform.localScale *= previousTrial.enclosure.Radius / 10f;
         }

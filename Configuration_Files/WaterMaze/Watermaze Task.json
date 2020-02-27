@@ -209,7 +209,7 @@
         {
             "Type": "3D",
             "Object": "Cylinder",
-            "Color": "ffff00",
+            "Color": "ffffff",
             "Sound": "Success",
             "Position": [5, 0, 7],
             "Scale": [3, 1, 3]

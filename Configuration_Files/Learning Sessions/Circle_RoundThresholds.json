@@ -2,7 +2,7 @@
     "OutputTimesPerSecond": 30,
     "TrialLoadingDelay": 1.0,
     "IgnoreUserInputDelay": 1,
-    "MorrisMazeThreshold": 50,
+    "MorrisMazeThreshold": 20,
     "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
     "CharacterData": {
         "Height": 2,

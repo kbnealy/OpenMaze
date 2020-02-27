@@ -2,7 +2,7 @@
     "OutputTimesPerSecond": 30,
     "TrialLoadingDelay": 1.0,
     "IgnoreUserInputDelay": 1.0,
-    "MorrisMazeThreshold": 0,
+    "MorrisMazeThreshold": 20,
     "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
     "CharacterData": {
         "Height": 2,
@@ -42,6 +42,9 @@
             
               "BlockName" : "Block 3 - Points Collection Rounds",
               "Notes" : "This is a block of trials with replacement and randomness.",
+              "EndGoal": "3",
+              "EndFunction": "CheckFoodThresholdPercentage",
+              "ShowNumSuccessfulTrials": true,
               "TrialOrder": [
                 10,18, 10,18, 10,18,
                 11,22,
@@ -219,7 +222,7 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 2000,
+            "Quota": 20,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
@@ -236,7 +239,7 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 2000,
+            "Quota": 20,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
@@ -253,7 +256,7 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 2000,
+            "Quota": 20,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
@@ -270,7 +273,7 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 2000,
+            "Quota": 20,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
@@ -287,7 +290,7 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 2000,
+            "Quota": 20,
             "LandMarks" :[],
             "TrialEndKey": "x"
         },
@@ -303,7 +306,7 @@
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Quota": 2000,
+            "Quota": 20,
             "LandMarks" :[],
             "TrialEndKey": "x"
         }
