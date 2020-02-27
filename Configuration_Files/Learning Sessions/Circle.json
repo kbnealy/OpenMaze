@@ -1,8 +1,8 @@
 {
     "OutputTimesPerSecond": 30,
     "TrialLoadingDelay": 1.0,
-    "IgnoreUserInputDelay": 1,
-    "MorrisMazeThreshold": 50,
+    "IgnoreUserInputDelay": 0.5,
+    "MorrisMazeThreshold": 0,
     "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
     "CharacterData": {
         "Height": 2,
@@ -14,7 +14,7 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [3],
+    "BlockOrder" : [1,2,3],
     
     "Blocks" : [
         {
@@ -205,7 +205,7 @@
         },
         {
             "20" : "Practice Finding - Collect 30 points",
-            "Header": "Collect 30 Points!",
+            "Header": "Collect $0.25!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 1000,
             "Scene": 2,
@@ -216,13 +216,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 30,
+            "Quota": 25,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "x"
         },
         {
             "21" : "Reward Location 1",
-            "Header": "Collect Points!",
+            "Header": "Find $$$",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -239,7 +239,7 @@
         },
         {
             "22" : "Reward Location 2",
-            "Header": "Collect Points!",
+            "Header": "Find $$$",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -256,7 +256,7 @@
         },
         {
             "23" : "Reward Location 3",
-            "Header": "Collect Points!",
+            "Header": "Find $$$",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -273,7 +273,7 @@
         },
         {
             "24" : "Reward Location 4",
-            "Header": "Collect Points!",
+            "Header": "Find $$$",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -290,7 +290,7 @@
         },
         {
             "25" : "Reward Location 5",
-            "Header": "Collect Points!",
+            "Header": "Find $$$",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -307,7 +307,7 @@
         },
         {
             "26" : "Reward Location 6",
-            "Header": "Collect Points!",
+            "Header": "Find $$$",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -324,7 +324,7 @@
         },
         {
             "27" : "Catch Trial",
-            "Header": "Collect Points!",
+            "Header": "Find $$$",
             "ShowCollectedPerTrial" : false,
             "TrialTime" : 60,
             "Scene": 2,
@@ -342,7 +342,7 @@
         {
             "28" : "End Trial",
             "Header": "NO FEEDBACK BONUS: $0.47",
-            "ShowCollectedPerTrial" : true,
+            "ShowCollectedPerBlock" : true,
             "TrialTime" : 60,
             "Scene": 6,
             "StartPosition" : [],

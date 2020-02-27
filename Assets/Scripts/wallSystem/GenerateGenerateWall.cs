@@ -77,7 +77,7 @@ namespace wallSystem
             }
             else if (DS.GetData().Trials[currTrialId].ShowCollectedPerBlock)
             {
-                Timer.text = "Goals found this block: " + E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId];
+                Timer.text = "Money Collected: $" + E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId]*0.01f;
             }
             
 
