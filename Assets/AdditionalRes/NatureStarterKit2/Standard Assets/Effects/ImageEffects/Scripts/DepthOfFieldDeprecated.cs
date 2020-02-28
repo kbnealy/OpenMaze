@@ -125,7 +125,7 @@ namespace UnityStandardAssets.ImageEffects
         }
 
         int GetDividerBasedOnQuality () {
-            var divider = 1;
+            int divider = 1;
             if (resolution == DofResolution.Medium)
                 divider = 2;
             else if (resolution == DofResolution.Low)
@@ -134,7 +134,7 @@ namespace UnityStandardAssets.ImageEffects
         }
 
         int GetLowResolutionDividerBasedOnQuality ( int baseDivider) {
-            var lowTexDivider = baseDivider;
+            int lowTexDivider = baseDivider;
             if (resolution == DofResolution.High)
                 lowTexDivider *= 2;
             if (resolution == DofResolution.Low)
@@ -161,10 +161,10 @@ namespace UnityStandardAssets.ImageEffects
             // update needed focal & rt size parameter
 
             bokeh = bokeh && bokehSupport;
-            var bokehBlurAmplifier = bokeh ? BOKEH_EXTRA_BLUR : 1.0f;
+            float bokehBlurAmplifier = bokeh ? BOKEH_EXTRA_BLUR : 1.0f;
 
-            var  blurForeground = quality > Dof34QualitySetting.OnlyBackground;
-            var focal01Size = focalSize / (_camera.farClipPlane - _camera.nearClipPlane);;
+            bool  blurForeground = quality > Dof34QualitySetting.OnlyBackground;
+            float focal01Size = focalSize / (_camera.farClipPlane - _camera.nearClipPlane);;
 
             if (simpleTweakMode) {
                 focalDistance01 = objectFocus ? (_camera.WorldToViewportPoint (objectFocus.position)).z / (_camera.farClipPlane) : FocalDistance01 (focalPoint);
@@ -193,8 +193,8 @@ namespace UnityStandardAssets.ImageEffects
             dofMaterial.SetVector ("_CurveParams", new Vector4 (simpleTweakMode ? 1.0f / focalStartCurve : focalStartCurve, simpleTweakMode ? 1.0f / focalEndCurve : focalEndCurve, focal01Size * 0.5f, focalDistance01));
             dofMaterial.SetVector ("_InvRenderTargetSize", new Vector4 (1.0f / (1.0f * source.width), 1.0f / (1.0f * source.height),0.0f,0.0f));
 
-            var divider =  GetDividerBasedOnQuality ();
-            var lowTexDivider = GetLowResolutionDividerBasedOnQuality (divider);
+            int divider =  GetDividerBasedOnQuality ();
+            int lowTexDivider = GetLowResolutionDividerBasedOnQuality (divider);
 
             AllocateTextures (blurForeground, source, divider, lowTexDivider);
 
@@ -293,7 +293,7 @@ namespace UnityStandardAssets.ImageEffects
         }
 
         void Blur ( RenderTexture from, RenderTexture to, DofBlurriness iterations, int blurPass, float spread) {
-            var tmp = RenderTexture.GetTemporary (to.width, to.height);
+            RenderTexture tmp = RenderTexture.GetTemporary (to.width, to.height);
             if ((int)iterations > 1) {
                 BlurHex (from, to, blurPass, spread, tmp);
                 if ((int)iterations > 2) {
@@ -316,7 +316,7 @@ namespace UnityStandardAssets.ImageEffects
             // we want a nice, big coc, hence we need to tap once from this (higher resolution) texture
             dofBlurMaterial.SetTexture ("_TapHigh", from);
 
-            var tmp = RenderTexture.GetTemporary (to.width, to.height);
+            RenderTexture tmp = RenderTexture.GetTemporary (to.width, to.height);
             if ((int)iterations > 1) {
                 BlurHex (from, to, blurPass, spread, tmp);
                 if ((int)iterations > 2) {
@@ -364,8 +364,8 @@ namespace UnityStandardAssets.ImageEffects
                 // point filter mode is important, otherwise we get bokeh shape & size artefacts
                 bokehInfo.filterMode = FilterMode.Point;
 
-                var arW = (bokehInfo.width * 1.0f) / (bokehInfo.height * 1.0f);
-                var sc = 2.0f / (1.0f * bokehInfo.width);
+                float arW = (bokehInfo.width * 1.0f) / (bokehInfo.height * 1.0f);
+                float sc = 2.0f / (1.0f * bokehInfo.width);
                 sc += bokehScale * maxBlurSpread * BOKEH_EXTRA_BLUR * oneOverBaseSize;
 
                 bokehMaterial.SetTexture ("_Source", bokehInfo);
@@ -374,7 +374,7 @@ namespace UnityStandardAssets.ImageEffects
                 bokehMaterial.SetFloat ("_Intensity", bokehIntensity);
                 bokehMaterial.SetPass (0);
 
-                foreach(var m in meshes)
+                foreach(Mesh m in meshes)
                     if (m) Graphics.DrawMeshNow (m, Matrix4x4.identity);
 
                 GL.PopMatrix ();

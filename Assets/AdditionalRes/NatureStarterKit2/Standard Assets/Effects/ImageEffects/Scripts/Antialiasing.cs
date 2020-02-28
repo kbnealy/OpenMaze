@@ -150,7 +150,7 @@ namespace UnityStandardAssets.ImageEffects
 				// DLAA antialiasing
 
                 source.anisoLevel = 0;
-                var interim = RenderTexture.GetTemporary(source.width, source.height);
+                RenderTexture interim = RenderTexture.GetTemporary(source.width, source.height);
                 Graphics.Blit(source, interim, dlaa, 0);
                 Graphics.Blit(interim, destination, dlaa, dlaaSharp ? 2 : 1);
                 RenderTexture.ReleaseTemporary(interim);

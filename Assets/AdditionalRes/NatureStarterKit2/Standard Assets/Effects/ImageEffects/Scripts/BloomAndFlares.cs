@@ -117,18 +117,18 @@ namespace UnityStandardAssets.ImageEffects
 
             doHdr = doHdr && supportHDRTextures;
 
-            var realBlendMode = screenBlendMode;
+            BloomScreenBlendMode realBlendMode = screenBlendMode;
             if (doHdr)
                 realBlendMode = BloomScreenBlendMode.Add;
 
             var rtFormat = (doHdr) ? RenderTextureFormat.ARGBHalf : RenderTextureFormat.Default;
-            var halfRezColor = RenderTexture.GetTemporary(source.width / 2, source.height / 2, 0, rtFormat);
-            var quarterRezColor = RenderTexture.GetTemporary(source.width / 4, source.height / 4, 0, rtFormat);
-            var secondQuarterRezColor = RenderTexture.GetTemporary(source.width / 4, source.height / 4, 0, rtFormat);
-            var thirdQuarterRezColor = RenderTexture.GetTemporary(source.width / 4, source.height / 4, 0, rtFormat);
+            RenderTexture halfRezColor = RenderTexture.GetTemporary(source.width / 2, source.height / 2, 0, rtFormat);
+            RenderTexture quarterRezColor = RenderTexture.GetTemporary(source.width / 4, source.height / 4, 0, rtFormat);
+            RenderTexture secondQuarterRezColor = RenderTexture.GetTemporary(source.width / 4, source.height / 4, 0, rtFormat);
+            RenderTexture thirdQuarterRezColor = RenderTexture.GetTemporary(source.width / 4, source.height / 4, 0, rtFormat);
 
-            var widthOverHeight = (1.0f * source.width) / (1.0f * source.height);
-            var oneOverBaseSize = 1.0f / 512.0f;
+            float widthOverHeight = (1.0f * source.width) / (1.0f * source.height);
+            float oneOverBaseSize = 1.0f / 512.0f;
 
             // downsample
 
@@ -146,12 +146,12 @@ namespace UnityStandardAssets.ImageEffects
 
             if (bloomBlurIterations < 1) bloomBlurIterations = 1;
 
-            for (var iter = 0; iter < bloomBlurIterations; iter++)
+            for (int iter = 0; iter < bloomBlurIterations; iter++)
             {
-                var spreadForPass = (1.0f + (iter * 0.5f)) * sepBlurSpread;
+                float spreadForPass = (1.0f + (iter * 0.5f)) * sepBlurSpread;
                 separableBlurMaterial.SetVector("offsets", new Vector4(0.0f, spreadForPass * oneOverBaseSize, 0.0f, 0.0f));
 
-                var src = iter == 0 ? secondQuarterRezColor : quarterRezColor;
+                RenderTexture src = iter == 0 ? secondQuarterRezColor : quarterRezColor;
                 Graphics.Blit(src, thirdQuarterRezColor, separableBlurMaterial);
                 src.DiscardContents();
 
@@ -218,7 +218,7 @@ namespace UnityStandardAssets.ImageEffects
 
                     if (lensflareMode == (LensflareStyle34)1)
                     {
-                        for (var itera = 0; itera < hollywoodFlareBlurIterations; itera++)
+                        for (int itera = 0; itera < hollywoodFlareBlurIterations; itera++)
                         {
                             separableBlurMaterial.SetVector("offsets", new Vector4((hollyStretchWidth * 2.0f / widthOverHeight) * oneOverBaseSize, 0.0f, 0.0f, 0.0f));
                             Graphics.Blit(secondQuarterRezColor, thirdQuarterRezColor, separableBlurMaterial);
@@ -237,7 +237,7 @@ namespace UnityStandardAssets.ImageEffects
 
                         // (c) combined
 
-                        for (var ix = 0; ix < hollywoodFlareBlurIterations; ix++)
+                        for (int ix = 0; ix < hollywoodFlareBlurIterations; ix++)
                         {
                             separableBlurMaterial.SetVector("offsets", new Vector4((hollyStretchWidth * 2.0f / widthOverHeight) * oneOverBaseSize, 0.0f, 0.0f, 0.0f));
                             Graphics.Blit(secondQuarterRezColor, thirdQuarterRezColor, separableBlurMaterial);

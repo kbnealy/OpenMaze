@@ -54,13 +54,13 @@ namespace UnityStandardAssets.ImageEffects
             tiltShiftMaterial.SetFloat("_BlurArea", blurArea);
             source.filterMode = FilterMode.Bilinear;
 
-            var rt = destination;
+            RenderTexture rt = destination;
             if (downsample > 0f) {
                 rt = RenderTexture.GetTemporary (source.width>>downsample, source.height>>downsample, 0, source.format);
                 rt.filterMode = FilterMode.Bilinear;
             }
 
-            var basePassNr = (int) quality; basePassNr *= 2;
+            int basePassNr = (int) quality; basePassNr *= 2;
             Graphics.Blit (source, rt, tiltShiftMaterial, mode == TiltShiftMode.TiltShiftMode ? basePassNr : basePassNr + 1);
 
             if (downsample > 0) {

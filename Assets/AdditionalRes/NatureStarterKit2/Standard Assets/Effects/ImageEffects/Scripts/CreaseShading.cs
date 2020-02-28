@@ -6,7 +6,7 @@ namespace UnityStandardAssets.ImageEffects
     [ExecuteInEditMode]
     [RequireComponent (typeof(Camera))]
     [AddComponentMenu ("Image Effects/Edge Detection/Crease Shading")]
-    public class CreaseShading : PostEffectsBase
+    class CreaseShading : PostEffectsBase
 	{
         public float intensity = 0.5f;
         public int softness = 1;
@@ -43,21 +43,21 @@ namespace UnityStandardAssets.ImageEffects
                 return;
             }
 
-            var rtW = source.width;
-            var rtH = source.height;
+            int rtW = source.width;
+            int rtH = source.height;
 
-            var widthOverHeight = (1.0f * rtW) / (1.0f * rtH);
-            var oneOverBaseSize = 1.0f / 512.0f;
+            float widthOverHeight = (1.0f * rtW) / (1.0f * rtH);
+            float oneOverBaseSize = 1.0f / 512.0f;
 
-            var hrTex = RenderTexture.GetTemporary (rtW, rtH, 0);
-            var lrTex1 = RenderTexture.GetTemporary (rtW/2, rtH/2, 0);
+            RenderTexture hrTex = RenderTexture.GetTemporary (rtW, rtH, 0);
+            RenderTexture lrTex1 = RenderTexture.GetTemporary (rtW/2, rtH/2, 0);
 
             Graphics.Blit (source,hrTex, depthFetchMaterial);
             Graphics.Blit (hrTex, lrTex1);
 
-            for(var i = 0; i < softness; i++)
+            for(int i = 0; i < softness; i++)
 			{
-                var lrTex2 = RenderTexture.GetTemporary (rtW/2, rtH/2, 0);
+                RenderTexture lrTex2 = RenderTexture.GetTemporary (rtW/2, rtH/2, 0);
                 blurMaterial.SetVector ("offsets", new Vector4 (0.0f, spread * oneOverBaseSize, 0.0f, 0.0f));
                 Graphics.Blit (lrTex1, lrTex2, blurMaterial);
                 RenderTexture.ReleaseTemporary (lrTex1);

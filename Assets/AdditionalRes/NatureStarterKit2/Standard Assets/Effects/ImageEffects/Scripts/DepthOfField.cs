@@ -11,7 +11,7 @@ namespace UnityStandardAssets.ImageEffects
         public bool  visualizeFocus = false;
         public float focalLength = 10.0f;
         public float focalSize = 0.05f;
-        public float aperture = 0.5f;
+        public float aperture = 11.5f;
         public Transform focalTransform = null;
         public float maxBlurSize = 2.0f;
         public bool  highResolution = false;
@@ -50,7 +50,6 @@ namespace UnityStandardAssets.ImageEffects
         private ComputeBuffer cbPoints;
         private float internalBlurWidth = 1.0f;
 
-        private Camera cachedCamera;
 
         public override bool CheckResources () {
             CheckSupport (true); // only requires depth, not HDR
@@ -68,8 +67,7 @@ namespace UnityStandardAssets.ImageEffects
         }
 
         void OnEnable () {
-            cachedCamera = GetComponent<Camera>();
-            cachedCamera.depthTextureMode |= DepthTextureMode.Depth;
+            GetComponent<Camera>().depthTextureMode |= DepthTextureMode.Depth;
         }
 
         void OnDisable () {
@@ -103,7 +101,7 @@ namespace UnityStandardAssets.ImageEffects
         }
 
         float FocalDistance01 ( float worldDist) {
-            return cachedCamera.WorldToViewportPoint((worldDist-cachedCamera.nearClipPlane) * cachedCamera.transform.forward + cachedCamera.transform.position).z / (cachedCamera.farClipPlane-cachedCamera.nearClipPlane);
+            return GetComponent<Camera>().WorldToViewportPoint((worldDist-GetComponent<Camera>().nearClipPlane) * GetComponent<Camera>().transform.forward + GetComponent<Camera>().transform.position).z / (GetComponent<Camera>().farClipPlane-GetComponent<Camera>().nearClipPlane);
         }
 
         private void WriteCoc ( RenderTexture fromTo, bool fgDilate) {
@@ -111,18 +109,18 @@ namespace UnityStandardAssets.ImageEffects
 
             if (nearBlur && fgDilate) {
 
-                var rtW = fromTo.width/2;
-                var rtH = fromTo.height/2;
+                int rtW = fromTo.width/2;
+                int rtH = fromTo.height/2;
 
                 // capture fg coc
-                var temp2 = RenderTexture.GetTemporary (rtW, rtH, 0, fromTo.format);
+                RenderTexture temp2 = RenderTexture.GetTemporary (rtW, rtH, 0, fromTo.format);
                 Graphics.Blit (fromTo, temp2, dofHdrMaterial, 4);
 
                 // special blur
-                var fgAdjustment = internalBlurWidth * foregroundOverlap;
+                float fgAdjustment = internalBlurWidth * foregroundOverlap;
 
                 dofHdrMaterial.SetVector ("_Offsets", new Vector4 (0.0f, fgAdjustment , 0.0f, fgAdjustment));
-                var temp1 = RenderTexture.GetTemporary (rtW, rtH, 0, fromTo.format);
+                RenderTexture temp1 = RenderTexture.GetTemporary (rtW, rtH, 0, fromTo.format);
                 Graphics.Blit (temp2, temp1, dofHdrMaterial, 2);
                 RenderTexture.ReleaseTemporary(temp2);
 
@@ -159,8 +157,8 @@ namespace UnityStandardAssets.ImageEffects
 
             // focal & coc calculations
 
-            focalDistance01 = (focalTransform) ? (cachedCamera.WorldToViewportPoint (focalTransform.position)).z / (cachedCamera.farClipPlane) : FocalDistance01 (focalLength);
-            dofHdrMaterial.SetVector("_CurveParams", new Vector4(1.0f, focalSize, (1.0f / (1.0f - aperture) - 1.0f), focalDistance01));
+            focalDistance01 = (focalTransform) ? (GetComponent<Camera>().WorldToViewportPoint (focalTransform.position)).z / (GetComponent<Camera>().farClipPlane) : FocalDistance01 (focalLength);
+            dofHdrMaterial.SetVector ("_CurveParams", new Vector4 (1.0f, focalSize, aperture/10.0f, focalDistance01));
 
             // possible render texture helpers
 
@@ -168,7 +166,7 @@ namespace UnityStandardAssets.ImageEffects
             RenderTexture rtLow2 = null;
             RenderTexture rtSuperLow1 = null;
             RenderTexture rtSuperLow2 = null;
-            var fgBlurDist = internalBlurWidth * foregroundOverlap;
+            float fgBlurDist = internalBlurWidth * foregroundOverlap;
 
             if (visualizeFocus)
             {
@@ -359,7 +357,7 @@ namespace UnityStandardAssets.ImageEffects
                 rtLow = RenderTexture.GetTemporary (source.width >> 1, source.height >> 1, 0, source.format);
                 rtLow2 = RenderTexture.GetTemporary (source.width >> 1, source.height >> 1, 0, source.format);
 
-                var blurPass = (blurSampleCount == BlurSampleCount.High || blurSampleCount == BlurSampleCount.Medium) ? 17 : 11;
+                int blurPass = (blurSampleCount == BlurSampleCount.High || blurSampleCount == BlurSampleCount.Medium) ? 17 : 11;
 
                 if (highResolution) {
                     dofHdrMaterial.SetVector ("_Offsets", new Vector4 (0.0f, internalBlurWidth, 0.025f, internalBlurWidth));

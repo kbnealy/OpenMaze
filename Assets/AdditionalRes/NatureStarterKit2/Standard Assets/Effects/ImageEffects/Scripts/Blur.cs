@@ -8,13 +8,11 @@ namespace UnityStandardAssets.ImageEffects
     public class Blur : MonoBehaviour
     {
         /// Blur iterations - larger number means more blur.
-        [Range(0,10)]
         public int iterations = 3;
 
         /// Blur spread for each iteration. Lower values
         /// give better looking blur, but require more iterations to
         /// get large blurs. Value is usually between 0.5 and 1.0.
-        [Range(0.0f,1.0f)]
         public float blurSpread = 0.6f;
 
 
@@ -62,7 +60,7 @@ namespace UnityStandardAssets.ImageEffects
         // Performs one blur iteration.
         public void FourTapCone (RenderTexture source, RenderTexture dest, int iteration)
         {
-            var off = 0.5f + iteration*blurSpread;
+            float off = 0.5f + iteration*blurSpread;
             Graphics.BlitMultiTap (source, dest, material,
                                    new Vector2(-off, -off),
                                    new Vector2(-off,  off),
@@ -74,7 +72,7 @@ namespace UnityStandardAssets.ImageEffects
         // Downsamples the texture to a quarter resolution.
         private void DownSample4x (RenderTexture source, RenderTexture dest)
         {
-            var off = 1.0f;
+            float off = 1.0f;
             Graphics.BlitMultiTap (source, dest, material,
                                    new Vector2(-off, -off),
                                    new Vector2(-off,  off),
@@ -85,17 +83,17 @@ namespace UnityStandardAssets.ImageEffects
 
         // Called by the camera to apply the image effect
         void OnRenderImage (RenderTexture source, RenderTexture destination) {
-            var rtW = source.width/4;
-            var rtH = source.height/4;
-            var buffer = RenderTexture.GetTemporary(rtW, rtH, 0);
+            int rtW = source.width/4;
+            int rtH = source.height/4;
+            RenderTexture buffer = RenderTexture.GetTemporary(rtW, rtH, 0);
 
             // Copy source to the 4x4 smaller texture.
             DownSample4x (source, buffer);
 
             // Blur the small texture
-            for(var i = 0; i < iterations; i++)
+            for(int i = 0; i < iterations; i++)
             {
-                var buffer2 = RenderTexture.GetTemporary(rtW, rtH, 0);
+                RenderTexture buffer2 = RenderTexture.GetTemporary(rtW, rtH, 0);
                 FourTapCone (buffer, buffer2, i);
                 RenderTexture.ReleaseTemporary(buffer);
                 buffer = buffer2;

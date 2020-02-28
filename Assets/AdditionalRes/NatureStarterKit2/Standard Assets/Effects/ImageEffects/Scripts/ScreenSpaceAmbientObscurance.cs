@@ -46,9 +46,9 @@ namespace UnityStandardAssets.ImageEffects
                 return;
             }
 
-            var P = GetComponent<Camera>().projectionMatrix;
+            Matrix4x4 P = GetComponent<Camera>().projectionMatrix;
             var invP= P.inverse;
-            var projInfo = new Vector4
+            Vector4 projInfo = new Vector4
                 ((-2.0f / (Screen.width * P[0])),
                  (-2.0f / (Screen.height * P[5])),
                  ((1.0f - P[2]) / P[0]),
@@ -62,10 +62,10 @@ namespace UnityStandardAssets.ImageEffects
             aoMaterial.SetFloat ("_Intensity", intensity);
             aoMaterial.SetFloat ("_BlurFilterDistance", blurFilterDistance);
 
-            var rtW = source.width;
-            var rtH = source.height;
+            int rtW = source.width;
+            int rtH = source.height;
 
-            var tmpRt  = RenderTexture.GetTemporary (rtW>>downsample, rtH>>downsample);
+            RenderTexture tmpRt  = RenderTexture.GetTemporary (rtW>>downsample, rtH>>downsample);
             RenderTexture tmpRt2;
 
             Graphics.Blit (source, tmpRt, aoMaterial, 0);
@@ -80,7 +80,7 @@ namespace UnityStandardAssets.ImageEffects
                 //  instead with a bilat-upsample afterwards ...
             }
 
-            for (var i = 0; i < blurIterations; i++) {
+            for (int i = 0; i < blurIterations; i++) {
                 aoMaterial.SetVector("_Axis", new Vector2(1.0f,0.0f));
                 tmpRt2 = RenderTexture.GetTemporary (rtW, rtH);
                 Graphics.Blit (tmpRt, tmpRt2, aoMaterial, 1);

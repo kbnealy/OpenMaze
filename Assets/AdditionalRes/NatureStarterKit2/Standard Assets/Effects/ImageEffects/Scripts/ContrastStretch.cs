@@ -9,7 +9,6 @@ namespace UnityStandardAssets.ImageEffects
     {
         /// Adaptation speed - percents per frame, if playing at 30FPS.
         /// Default is 0.02 (2% each 1/30s).
-        [Range(0.0001f, 1.0f)]
         public float adaptationSpeed = 0.02f;
 
         /// If our scene is really dark (or really bright), we might not want to
@@ -18,11 +17,9 @@ namespace UnityStandardAssets.ImageEffects
         /// limitMinimum=1, limitMaximum=0 is always stretching colors to full range.
 
         /// The limit on the minimum luminance (0...1) - we won't go above this.
-        [Range(0.0f,1.0f)]
         public float limitMinimum = 0.2f;
 
         /// The limit on the maximum luminance (0...1) - we won't go below this.
-        [Range(0.0f, 1.0f)]
         public float limitMaximum = 0.6f;
 
 
@@ -104,7 +101,7 @@ namespace UnityStandardAssets.ImageEffects
 
         void OnEnable()
         {
-            for( var i = 0; i < 2; ++i )
+            for( int i = 0; i < 2; ++i )
             {
                 if ( !adaptRenderTex[i] ) {
                     adaptRenderTex[i] = new RenderTexture(1, 1, 0);
@@ -115,7 +112,7 @@ namespace UnityStandardAssets.ImageEffects
 
         void OnDisable()
         {
-            for( var i = 0; i < 2; ++i )
+            for( int i = 0; i < 2; ++i )
             {
                 DestroyImmediate( adaptRenderTex[i] );
                 adaptRenderTex[i] = null;
@@ -136,7 +133,7 @@ namespace UnityStandardAssets.ImageEffects
         {
             // Blit to smaller RT and convert to luminance on the way
             const int TEMP_RATIO = 1; // 4x4 smaller
-            var rtTempSrc = RenderTexture.GetTemporary(source.width/TEMP_RATIO, source.height/TEMP_RATIO);
+            RenderTexture rtTempSrc = RenderTexture.GetTemporary(source.width/TEMP_RATIO, source.height/TEMP_RATIO);
             Graphics.Blit (source, rtTempSrc, materialLum);
 
             // Repeatedly reduce this image in size, computing min/max luminance values
@@ -146,11 +143,11 @@ namespace UnityStandardAssets.ImageEffects
             while( rtTempSrc.width > FINAL_SIZE || rtTempSrc.height > FINAL_SIZE )
             {
                 const int REDUCE_RATIO = 2; // our shader does 2x2 reduction
-                var destW = rtTempSrc.width / REDUCE_RATIO;
+                int destW = rtTempSrc.width / REDUCE_RATIO;
                 if ( destW < FINAL_SIZE ) destW = FINAL_SIZE;
-                var destH = rtTempSrc.height / REDUCE_RATIO;
+                int destH = rtTempSrc.height / REDUCE_RATIO;
                 if ( destH < FINAL_SIZE ) destH = FINAL_SIZE;
-                var rtTempDst = RenderTexture.GetTemporary(destW,destH);
+                RenderTexture rtTempDst = RenderTexture.GetTemporary(destW,destH);
                 Graphics.Blit (rtTempSrc, rtTempDst, materialReduce);
 
                 // Release old src temporary, and make new temporary the source
@@ -172,12 +169,12 @@ namespace UnityStandardAssets.ImageEffects
         /// Helper function to do gradual adaptation to min/max luminances
         private void CalculateAdaptation( Texture curTexture )
         {
-            var prevAdaptIndex = curAdaptIndex;
+            int prevAdaptIndex = curAdaptIndex;
             curAdaptIndex = (curAdaptIndex+1) % 2;
 
             // Adaptation speed is expressed in percents/frame, based on 30FPS.
             // Calculate the adaptation lerp, based on current FPS.
-            var adaptLerp = 1.0f - Mathf.Pow( 1.0f - adaptationSpeed, 30.0f * Time.deltaTime );
+            float adaptLerp = 1.0f - Mathf.Pow( 1.0f - adaptationSpeed, 30.0f * Time.deltaTime );
             const float kMinAdaptLerp = 0.01f;
             adaptLerp = Mathf.Clamp( adaptLerp, kMinAdaptLerp, 1 );
 

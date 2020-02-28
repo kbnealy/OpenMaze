@@ -13,7 +13,6 @@ namespace UnityStandardAssets.ImageEffects
     [RequireComponent(typeof(Camera))]
     public class MotionBlur : ImageEffectBase
     {
-        [Range(0.0f, 0.92f)]
         public float blurAmount = 0.8f;
         public bool extraBlur = false;
 
@@ -50,7 +49,7 @@ namespace UnityStandardAssets.ImageEffects
             // If Extra Blur is selected, downscale the texture to 4x4 smaller resolution.
             if (extraBlur)
             {
-                var blurbuffer = RenderTexture.GetTemporary(source.width/4, source.height/4, 0);
+                RenderTexture blurbuffer = RenderTexture.GetTemporary(source.width/4, source.height/4, 0);
                 accumTexture.MarkRestoreExpected();
                 Graphics.Blit(accumTexture, blurbuffer);
                 Graphics.Blit(blurbuffer,accumTexture);

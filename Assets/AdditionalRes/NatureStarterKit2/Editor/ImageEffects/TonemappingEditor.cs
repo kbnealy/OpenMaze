@@ -40,7 +40,7 @@ namespace UnityStandardAssets.ImageEffects
 
             GUILayout.Label("Mapping HDR to LDR ranges since 1982", EditorStyles.miniLabel);
 
-            var cam = (target as Tonemapping).GetComponent<Camera>();
+            Camera cam = (target as Tonemapping).GetComponent<Camera>();
             if (cam != null) {
                 if (!cam.allowHDR) {
                     EditorGUILayout.HelpBox("The camera is not HDR enabled. This will likely break the Tonemapper.", MessageType.Warning);
