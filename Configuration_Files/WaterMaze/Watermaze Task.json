@@ -16,7 +16,7 @@
         {
             "BlockName": "1 - Starting Block - visible reward",
             "Notes": "This is a standard block of trials.",
-            "TrialOrder": [1, 2, 15, 4, 16, 7, 3, 4]
+            "TrialOrder": [1, 2, 15, 17, 16, 7, 3, 4]
         },
         {
             "BlockName": "Invisible reward + Catch",
@@ -207,6 +207,13 @@
             "Instructional": 1,
             "FileLocation": "ID/RewardVisible.png",
             "TrialTime": 2,
+            "TrialEndKey": "p"
+        },
+        {
+            "17": "Dont leave room Prep screen",
+            "Instructional": 1,
+            "FileLocation": "ID/Together.png",
+            "TrialTime": -1,
             "TrialEndKey": "p"
         }
     ],
