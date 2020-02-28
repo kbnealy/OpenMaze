@@ -35,7 +35,7 @@
               "TrialOrder": [
                  6,7,9,4,
                  10,17,
-                 8,12,13,4
+                 12,13,4
                 ]
         },
         {
@@ -43,7 +43,7 @@
               "BlockName" : "Block 3 - Points Collection Rounds",
               "Notes" : "This is a block of trials with replacement and randomness.",
               "TrialOrder": [
-                10,18, 11,22, 10,18, 10,18,
+                10,18, 11,22, 24, 10,18, 10,18,
                 11,22,
                 10,19, 10,19, 10,19,
                 11,22,
@@ -86,9 +86,9 @@
             "TrialEndKey": "p"
         },
         {
-            "4" : "Questions",
+            "4" : "Questions - RA STAYS",
             "Instructional": 1,
-            "FileLocation": "Practice/Questions.png",
+            "FileLocation": "Practice/Together.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
@@ -291,20 +291,18 @@
             "TrialEndKey": "x"
         },
         {
-            "23" : "3D - simple square - No Goals",
-            "Header": "NO FEEDBACK BONUS: $0.11",
-            "ShowCollectedPerBlock" : true,
-            "TrialTime" : 60,
-            "Scene": 6,
-            "StartPosition" : [],
-            "StartFacing" : -1,
-            "Rotate": 0,
-            "ActiveGoals" : [],
-            "InvisibleGoals" : [],
-            "InactiveGoals" : [],
-            "Quota": 2000,
-            "LandMarks" :[],
-            "TrialEndKey": "x"
+            "23" : "EndScreen",
+            "Instructional": 1,
+            "FileLocation": "Practice/EndScreen.png",
+            "TrialTime": -1,
+            "TrialEndKey": "p"
+        },
+        {
+            "24" : "Questions - RA LEAVES",
+            "Instructional": 1,
+            "FileLocation": "Practice/Questions.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
         }
     ],
 
