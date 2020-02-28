@@ -90,7 +90,7 @@
             "5" : "Explore",
             "Instructional": 1,
             "FileLocation": "Square/Explore.png",
-            "TrialTime": 0,
+            "TrialTime": 1,
             "TrialEndKey": "p"
         },
         {
