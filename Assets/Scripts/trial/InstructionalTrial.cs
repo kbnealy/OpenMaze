@@ -38,6 +38,9 @@ namespace trial
                 Debug.Log(_runningTime);
                 Progress();
             }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+                Application.Quit();
         }
     }
 }
