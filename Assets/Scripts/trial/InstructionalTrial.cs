@@ -38,9 +38,12 @@ namespace trial
                 Debug.Log(_runningTime);
                 Progress();
             }
-
-            if (Input.GetKeyDown(KeyCode.Escape))
+            
+            if (ExitButton.clicked == true)
+            {
                 Application.Quit();
+            }
+
         }
     }
 }

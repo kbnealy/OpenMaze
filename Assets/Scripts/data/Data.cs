@@ -100,7 +100,8 @@ namespace data
             public float StartFacing; // The starting angle of the character (in degrees). if set to -1 start facing will be random
             public bool ShowCollectedPerTrial; // Whether or not to display the amount of goals/pickups collected (resets each trial)
             public bool ShowCollectedPerBlock; // Whether or not to display the amount of goals/pickups collected (resets each block)
-            public bool ShowTotals; // this is a Morris maze specific parameter that shows the totals from the experiment. 
+            public bool ShowTotals; // this is a Morris maze specific parameter that shows the totals from the experiment.
+            public bool ExitButton; //When this is set to true a button that says "Exit Experiment" will appear at the bottom of screen, when pressed application will close
         }
 
         // Represents an Enclosure (Maze) for the user. TODO: Enclosures can be prebuilt; located in:...

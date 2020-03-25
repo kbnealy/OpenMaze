@@ -746,7 +746,8 @@
             "Instructional": 1,
             "FileLocation": "ID/Complete.png",
             "TrialTime": -1,
-            "TrialEndKey": "Space"
+            "TrialEndKey": "o",
+            "ExitButton": true
         },
         {
             "63": "Visible Reward Trial",

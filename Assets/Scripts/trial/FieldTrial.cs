@@ -112,7 +112,7 @@ namespace trial
         {
             base.Update(deltaTime);
 
-            if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Joystick1Button0))
+            if (StartButton.clicked == true)
             {
                 // Sets the output file name as the desired one.
                 var subjectTextField = _fields[0].transform.GetComponentsInChildren<Text>()[1];

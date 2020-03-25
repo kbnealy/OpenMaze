@@ -21,7 +21,7 @@
             "Block 1" : "Welcome To the experiment + Practice: Explore Instructions",
               "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
-                 1,2,3,4,5,6,7
+                 2,3,62,4,5,6,7
                 ]
         },
         {
@@ -746,7 +746,8 @@
             "Instructional": 1,
             "FileLocation": "ID/Complete.png",
             "TrialTime": -1,
-            "TrialEndKey": "Space"
+            "TrialEndKey": "i",
+            "ExitButton": true
         },
         {
             "63": "Visible Reward Trial",
