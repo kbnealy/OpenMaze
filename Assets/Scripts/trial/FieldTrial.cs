@@ -20,11 +20,11 @@ namespace trial
         {
             _fields = fields;
 
-            string[] files = Directory.GetFiles(Application.dataPath + "/StreamingAssets/Default_Config/");
+            string[] files = Directory.GetFiles(Application.streamingAssetsPath + "/Default_Config/");
             Debug.Log(files);
             if (files.Length > 0)
             {
-                string defaultConfig = Application.dataPath + "/StreamingAssets/Default_Config/" + Path.GetFileName(files[0]);
+                string defaultConfig = Application.streamingAssetsPath + "/Default_Config/" + Path.GetFileName(files[0]);
                 Loader.ExternalActivation(defaultConfig);
             }
             else
