@@ -14,14 +14,14 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [1,2,3,4,5,6,7,8],
+    "BlockOrder" : [1,2,3,4,5,6,7,8,9,10,11,12,13],
     
     "Blocks" : [
         {
             "Block 1" : "Welcome To the experiment + Practice: Explore Instructions",
               "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
-                 2,3,62,4,5,6,7
+                 2,3,4,5,6,7
                 ]
         },
         {
@@ -405,7 +405,7 @@
         {
             "28" : "Explore",
             "Instructional": 1,
-            "FileLocation": "Circle/Explore.png",
+            "FileLocation": "Circle/ExploreRound.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
@@ -434,7 +434,7 @@
             "32" : "Explore The Environment Cue Screen",
             "Instructional": 1,
             "FileLocation": "Circle/Explore.png",
-            "TrialTime": -1,
+            "TrialTime": 1,
             "TrialEndKey": "Space"
         },
         {
@@ -541,15 +541,15 @@
             "TrialEndKey": "o"
         },
         {
-            "46" : "Practice Trial - Collect $0.25",
-            "Header": "Collect $0.25!",
+            "46" : "Collect $0.25",
+            "Header": "Collect $0.25",
             "ShowCollectedPerTrial" : true,
-            "TrialTime" : 1000,
+            "TrialTime" : 10000,
             "Scene": 2,
             "StartPosition" : [],
             "StartFacing" : -1,
             "Rotate": 0,
-            "ActiveGoals" : [10],
+            "ActiveGoals" : [1],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 2,
@@ -571,7 +571,7 @@
             "InactiveGoals" : [],
             "Enclosure": 2,
             "Quota": 5000,
-            "LandMarks" :[1,2,3,4],
+            "LandMarks" :[],
             "TrialEndKey": "o"
         },
         {
@@ -673,7 +673,7 @@
             "InactiveGoals" : [],
             "Enclosure": 2,
             "Quota": 5000,
-            "LandMarks" :[1,2,3,4],
+            "LandMarks" :[],
             "TrialEndKey": "o"
         },
         {
@@ -757,11 +757,11 @@
             "StartPosition": [-10, -10],
             "StartFacing": 60,
             "Rotate": 0,
-            "Enclosure": 1,
+            "Enclosure": 4,
             "ActiveGoals": [11,12],
             "InvisibleGoals": [],
             "InactiveGoals": [],
-            "Quota": 4,
+            "Quota": 1,
             "LandMarks": [],
             "TrialEndKey": "o"
         },
@@ -1062,9 +1062,11 @@
             "WallHeight": 3,
             "WallColor": "000000",
             "GroundTileSides": 4,
-            "GroundTileSize": 1.0,
+            "GroundTileSize": 1,
             "GroundColor": "000000",
-            "Position": [0, 0]
+            "Position": [0, 0],
+            "InitialRotation": 0
+
         }
     ]
 }

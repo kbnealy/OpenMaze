@@ -264,7 +264,7 @@ PrefabInstance:
     - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 35
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
         type: 3}
@@ -279,6 +279,36 @@ PrefabInstance:
     - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
         type: 3}
       propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.009344985
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.009344985
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224538795799212494, guid: 74c4ce83a253d50458c981c9ad04671c,

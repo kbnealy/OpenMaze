@@ -68,8 +68,9 @@ namespace wallSystem
                 }
                 else
                 {
-                    Timer.text = "Money Collected: $" + E.Get().CurrTrial.NumCollected*0.01f;
-                    Timer.color = Color.green;
+                    var CollectionText = GameObject.Find("CountDown").GetComponent<Text>();
+                    CollectionText.text = "Money Collected: $" + E.Get().CurrTrial.NumCollected * 0.01f;
+                    CollectionText.color = Color.green;
                     var goalText = GameObject.Find("Goal").GetComponent<Text>();
                     goalText.color = Color.green;
                 }

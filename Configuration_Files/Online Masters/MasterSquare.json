@@ -14,14 +14,14 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [1,2,3,4,5,6,7,8],
+    "BlockOrder" : [1,2,3,4,5,6,7,8,9,10,11,12,13],
     
     "Blocks" : [
         {
             "Block 1" : "Welcome To the experiment + Practice: Explore Instructions",
               "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
-                 1,2,3,4,5,6,7
+                 2,3,4,5,6,7
                 ]
         },
         {
@@ -57,7 +57,7 @@
                 ]
         },
         {
-            "Block 5" : "Circle: Explore instructions",
+            "Block 5" : "Square: Explore instructions",
               "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
                  27,28,29,30,31
@@ -65,7 +65,7 @@
         },
         {
             
-              "Block 6" : "Circle: Explore The Trials",
+              "Block 6" : "Square: Explore The Trials",
               "Notes" : "This is a block of trials with replacement and randomness.",
               "TrialOrder": [
               	 32,45,44,
@@ -76,14 +76,14 @@
                 ]
         },
         {
-            "Block 7": "Circle: Finding Money + $0.25 + Feedback/NoFeedback instructions",
+            "Block 7": "Square: Finding Money + $0.25 + Feedback/NoFeedback instructions",
             "Notes": "This is a standard block of trials.",
             "TrialOrder": [
             	33,34,35,31,40,46,33,36,37,38,39,31
             	]
         },
         {
-            "Block 8": "Circle: Main Money Finding",
+            "Block 8": "Square: Main Money Finding",
             "Notes": "This is a standard block of trials.",
             "TrialOrder": [
             	 40,47,  41,53,  40,47,  40,47,
@@ -396,121 +396,121 @@
             "TrialEndKey": "o"
         },
         {
-            "27" : "Section 2*********************************************************CIRCLE TRIALS",
+            "27" : "Section 2*********************************************************Square TRIALS",
             "Instructional": 1,
-            "FileLocation": "Circle/Section.png",
+            "FileLocation": "Square/Section.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "28" : "Explore",
             "Instructional": 1,
-            "FileLocation": "Circle/Explore.png",
+            "FileLocation": "Square/ExploreRound.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "29" : "Controls",
             "Instructional": -1,
-            "FileLocation": "Circle/Controls.png",
+            "FileLocation": "Square/Controls.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "30" : "TopDown",
             "Instructional": 1,
-            "FileLocation": "Circle/TopDown.png",
+            "FileLocation": "Square/TopDown.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "31" : "Ready",
             "Instructional": 1,
-            "FileLocation": "Circle/Ready.png",
+            "FileLocation": "Square/Ready.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "32" : "Explore The Environment Cue Screen",
             "Instructional": 1,
-            "FileLocation": "Circle/Explore.png",
-            "TrialTime": -1,
+            "FileLocation": "Square/Explore.png",
+            "TrialTime": 1,
             "TrialEndKey": "Space"
         },
         {
             "33" : "Great Work!",
             "Instructional": 1,
-            "FileLocation": "Circle/GreatWork.png",
+            "FileLocation": "Square/GreatWork.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "34" : "Finding Money",
             "Instructional": 1,
-            "FileLocation": "Circle/FindingMoney.png",
+            "FileLocation": "Square/FindingMoney.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "35" : "Headphones",
             "Instructional": 1,
-            "FileLocation": "Circle/Headphones.png",
+            "FileLocation": "Square/Headphones.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "36" : "MoneyCollections",
             "Instructional": 1,
-            "FileLocation": "Circle/Collection.png",
+            "FileLocation": "Square/Collection.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "37" : "Feedback instructions",
             "Instructional": 1,
-            "FileLocation": "Circle/Feedback.png",
+            "FileLocation": "Square/Feedback.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "38" : "No Feedback Instructions",
             "Instructional": 1,
-            "FileLocation": "Circle/NoFeedback.png",
+            "FileLocation": "Square/NoFeedback.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "39" : "Bonus Payment Instruction screen",
             "Instructional": 1,
-            "FileLocation": "Circle/Unlimited.png",
+            "FileLocation": "Square/Unlimited.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "40" : "Search for Money Cue",
             "Instructional": 1,
-            "FileLocation": "Circle/Money.png",
+            "FileLocation": "Square/Money.png",
             "TrialTime": 1,
             "TrialEndKey": "Space"
         },
         {
             "41" : "Search for Money No Feedback Cue",
             "Instructional": 1,
-            "FileLocation": "Circle/MoneyNF.png",
+            "FileLocation": "Square/MoneyNF.png",
             "TrialTime": 1,
             "TrialEndKey": "Space"
         },
         {
             "42" : "Break",
             "Instructional": 1,
-            "FileLocation": "Circle/Break.png",
+            "FileLocation": "Square/Break.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "43" : "You've Completed the BONUS PAY",
             "Instructional": 1,
-            "FileLocation": "Circle/Complete.png",
+            "FileLocation": "Square/Complete.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
@@ -535,24 +535,24 @@
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Enclosure": 2,
+            "Enclosure": 3,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
         },
         {
-            "46" : "Practice Trial - Collect $0.25",
-            "Header": "Collect $0.25!",
+            "46" : "Collect $0.25",
+            "Header": "Collect $0.25",
             "ShowCollectedPerTrial" : true,
-            "TrialTime" : 1000,
+            "TrialTime" : 10000,
             "Scene": 2,
             "StartPosition" : [],
             "StartFacing" : -1,
             "Rotate": 0,
-            "ActiveGoals" : [10],
+            "ActiveGoals" : [1],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Enclosure": 2,
+            "Enclosure": 3,
             "Quota": 25,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
@@ -569,9 +569,9 @@
             "ActiveGoals" : [5],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Enclosure": 2,
+            "Enclosure": 3,
             "Quota": 5000,
-            "LandMarks" :[1,2,3,4],
+            "LandMarks" :[],
             "TrialEndKey": "o"
         },
         {
@@ -586,7 +586,7 @@
             "ActiveGoals" : [6],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Enclosure": 2,
+            "Enclosure": 3,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
@@ -603,7 +603,7 @@
             "ActiveGoals" : [7],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Enclosure": 2,
+            "Enclosure": 3,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
@@ -620,7 +620,7 @@
             "ActiveGoals" : [8],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Enclosure": 2,
+            "Enclosure": 3,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
@@ -637,7 +637,7 @@
             "ActiveGoals" : [9],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Enclosure": 2,
+            "Enclosure": 3,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
@@ -654,7 +654,7 @@
             "ActiveGoals" : [10],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Enclosure": 2,
+            "Enclosure": 3,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
@@ -671,9 +671,9 @@
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "Enclosure": 2,
+            "Enclosure": 3,
             "Quota": 5000,
-            "LandMarks" :[1,2,3,4],
+            "LandMarks" :[],
             "TrialEndKey": "o"
         },
         {
@@ -746,7 +746,8 @@
             "Instructional": 1,
             "FileLocation": "ID/Complete.png",
             "TrialTime": -1,
-            "TrialEndKey": "Space"
+            "TrialEndKey": "i",
+            "ExitButton": true
         },
         {
             "63": "Visible Reward Trial",
@@ -756,11 +757,11 @@
             "StartPosition": [-10, -10],
             "StartFacing": 60,
             "Rotate": 0,
-            "Enclosure": 1,
+            "Enclosure": 4,
             "ActiveGoals": [11,12],
             "InvisibleGoals": [],
             "InactiveGoals": [],
-            "Quota": 4,
+            "Quota": 1,
             "LandMarks": [],
             "TrialEndKey": "o"
         },
@@ -909,51 +910,51 @@
             "Position": [8, 1, 6.5],
             "Scale": [1, 1, 1]
         },
-                {
-            "Goal 5" : "Circle Location 1",
+        {
+            "Goal 5" : "Square Location 1",
             "Type": "3D",
             "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [7.5, 1, -7.8],
+            "Position": [8.4, 1, 9.6],
             "Scale": [1, 1, 1]
         },
         {
-            "Goal 6" : "Circle Location 2",
+            "Goal 6" : "Square Location 2",
             "Type": "3D",
             "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [5.4, 1, -5.7],
+            "Position": [5.7, 1, 7.2],
             "Scale": [1, 1, 1]
         },
         {
-            "Goal 7" : "Circle Location 3",
+            "Goal 7" : "Square Location 3",
             "Type": "3D",
             "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [4.05, 1, -5.4],
+            "Position": [4.2, 1, 8.25],
             "Scale": [1, 1, 1]
         },
         {
-            "Goal 8" : "Circle Location 4",
+            "Goal 8" : "Square Location 4",
             "Type": "3D",
             "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [4.5, 1, -8.25],
+            "Position": [5.85, 1, 4.8],
             "Scale": [1, 1, 1]
         },
         {
-            "Goal 9" : "Circle Location 5",
+            "Goal 9" : "Square Location 5",
             "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [7.95, 1, -9.6],
+            "Position": [9.3, 1, 6.45],
             "Scale": [1, 1, 1]
         },
         {
-            "Goal 10" : "Circle Location 6",
+            "Goal 10" : "Square Location 6",
             "Type": "3D",
             "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [10.95, 1, -7.05],
+            "Position": [10.8, 1, 5.55],
             "Scale": [1, 1, 1]
         },
         {
@@ -1031,7 +1032,7 @@
             "InitialRotation": 0
         },
         {
-            "Enclosure 2": "Circle",
+            "Enclosure 2": "Square",
             "Sides": 40,
             "Radius": 15,
             "WallHeight" : 7,
@@ -1043,7 +1044,7 @@
             "InitialRotation": 0
         },
         {
-            "Enclosure 3": "Circle",
+            "Enclosure 3": "Square",
             "Sides": 4,
             "Radius": 15,
             "WallHeight" : 7,
@@ -1061,9 +1062,11 @@
             "WallHeight": 3,
             "WallColor": "000000",
             "GroundTileSides": 4,
-            "GroundTileSize": 1.0,
+            "GroundTileSize": 1,
             "GroundColor": "000000",
-            "Position": [0, 0]
+            "Position": [0, 0],
+            "InitialRotation": 0
+
         }
     ]
 }

@@ -119,7 +119,7 @@ namespace wallSystem
                 while (i++ < 100)
                 {
                     var CurrentTrialRadius = DS.GetData().Enclosures[E.Get().CurrTrial.TrialProgress.CurrentEnclosureIndex].Radius;
-                    var v = Random.insideUnitCircle * CurrentTrialRadius * 0.9f;
+                    var v = Random.insideUnitCircle * CurrentTrialRadius * 0.7f;
                     var mag = Vector3.Distance(v, new Vector2(pickX, pickY));
                     if (mag > DS.GetData().CharacterData.DistancePickup)
                     {
