@@ -98,7 +98,7 @@
             	 40,49,  40,49,  42,
             	 40,50,  40,50,
             	 40,51,  40,51,
-            	 40,52,  40,52, 41,53, 41,53
+            	 40,52,  40,52, 41,53, 41,53, 54
             	]
         },
         {
@@ -549,7 +549,7 @@
             "StartPosition" : [],
             "StartFacing" : -1,
             "Rotate": 0,
-            "ActiveGoals" : [1],
+            "ActiveGoals" : [5],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 3,
@@ -571,7 +571,7 @@
             "InactiveGoals" : [],
             "Enclosure": 3,
             "Quota": 5000,
-            "LandMarks" :[],
+            "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
         },
         {
@@ -673,14 +673,14 @@
             "InactiveGoals" : [],
             "Enclosure": 3,
             "Quota": 5000,
-            "LandMarks" :[],
+            "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
         },
         {
             "54" : "End Trial",
-            "Header": "NO FEEDBACK BONUS: $0.52",
+            "Header": "NO FEEDBACK BONUS: $0.52 \nPLEASE NOTIFY THE EXPERIMENTER THAT \nYOU HAVE COMPLETED THIS PORTION OF THE EXPERIMENT",
             "ShowCollectedPerBlock" : true,
-            "TrialTime" : 60,
+            "TrialTime" : 600,
             "Scene": 6,
             "StartPosition" : [],
             "StartFacing" : -1,
@@ -944,6 +944,7 @@
         },
         {
             "Goal 9" : "Square Location 5",
+            "Type": "3D",
             "Object": "RewardZone",
             "Color": "ff0000",
             "Position": [9.3, 1, 6.45],
