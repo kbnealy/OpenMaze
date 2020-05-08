@@ -19,14 +19,12 @@
     "Blocks" : [
         {
             "Block 1" : "Welcome To the experiment + Practice: Explore Instructions",
-              "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
                  2,3,4,5,6,7
                 ]
         },
         {
             "Block 2" : "Practice: Explore the Environment Trials",
-              "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
                  8,20,19,
                  8,20,19,
@@ -38,18 +36,16 @@
         {
             
               "Block 3" : "Practice: Finding Money + $0.25 + Feedback/NoFeedback Instructions",
-              "Notes" : "This is a block of trials with replacement and randomness.",
               "TrialOrder": [
-                9,10,11,
+                9,10,11,7,
                 16,21,
-                9,12,13,14,15,7
+                9,12,13,14,71
               ]
         },
                 {
             "Block 4" : "Practice: Main Money Finding",
-              "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
-                 16,22,  17,26,  16,22,  16,22,
+                 16,22,  17,26, 15,7,  16,22,  16,22,
                  17,26,	 16,23,  16,23,  16,23,
                  17,26,  16,24,  16,24,  16,24,
                  16,25,  17,26,  16,25,  16,25,
@@ -58,15 +54,13 @@
         },
         {
             "Block 5" : "Circle: Explore instructions",
-              "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
-                 27,28,29,30,31
+                 18,27,28,29,30,31
                 ]
         },
         {
             
               "Block 6" : "Circle: Explore The Trials",
-              "Notes" : "This is a block of trials with replacement and randomness.",
               "TrialOrder": [
               	 32,45,44,
               	 32,45,44,
@@ -77,14 +71,12 @@
         },
         {
             "Block 7": "Circle: Finding Money + $0.25 + Feedback/NoFeedback instructions",
-            "Notes": "This is a standard block of trials.",
             "TrialOrder": [
             	33,34,35,31,40,46,33,36,37,38,39,31
             	]
         },
         {
             "Block 8": "Circle: Main Money Finding",
-            "Notes": "This is a standard block of trials.",
             "TrialOrder": [
             	 40,47,  41,53,  40,47,  40,47,
             	 41,53,  40,48,  40,48,  40,48,  42,
@@ -103,35 +95,30 @@
         },
         {
             "Block 9": "WaterMaze: Visible Instructions",
-            "Notes": "This is a standard block of trials.",
             "TrialOrder": [
             	55,56,57,58,31
             	]
         },
         {
             "Block 10": "WaterMaze: Visible Trial",
-            "Notes": "This is a standard block of trials.",
             "TrialOrder": [
             	60,63
             	]
         },
         {
             "Block 11": "WaterMaze invisible Instructions",
-            "Notes": "This is a standard block of trials.",
             "TrialOrder": [
             	59,31
             	]
         },
         {
             "Block 12": "WaterMaze invisible Trials",
-            "Notes": "This is a standard block of trials.",
             "TrialOrder": [
             	60,64,  60,65,  60,66,  60,67,  60,68,  60,69,  60,70
             	]
         },
         {
             "Block 13": "Experiment End Screen",
-            "Notes": "This is a standard block of trials.",
             "TrialOrder": [
             	62
             	]
@@ -746,7 +733,7 @@
             "Instructional": 1,
             "FileLocation": "ID/Complete.png",
             "TrialTime": -1,
-            "TrialEndKey": "i",
+            "TrialEndKey": "o",
             "ExitButton": true
         },
         {
@@ -875,7 +862,14 @@
             "Quota": 1,
             "LandMarks": [],
             "TrialEndKey": "o"
-        }
+        },
+        {
+            "71": "Pactice Feedback No Feedback",
+            "Instructional": 1,
+            "FileLocation": "Practice/FBNFB.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        } 
     ],
 
 
@@ -884,33 +878,37 @@
     "Goals": [
         {
             "Goal 1" : "Practice Location 1",
-            "Type": "RewardZone",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
             "Position": [4.1, 1, 4.75],
             "Scale": [1, 1, 1]
         },
         {
             "Goal 2" : "Practice Location 2",
-            "Type": "RewardZone",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
             "Position": [5, 1, 6.7],
             "Scale": [1, 1, 1]
         },
         {
             "Goal 3" : "Practice Location 3",
-            "Type": "RewardZone",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
             "Position": [9.7, 1, 5.7],
             "Scale": [1, 1, 1]
         },
         {
             "Goal 4" : "Practice Location 4",
-            "Type": "RewardZone",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
             "Position": [8, 1, 6.5],
             "Scale": [1, 1, 1]
         },
-                {
+        {
             "Goal 5" : "Circle Location 1",
             "Type": "3D",
             "Object": "RewardZone",

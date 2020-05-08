@@ -1209,7 +1209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -369}
+  m_AnchoredPosition: {x: 0, y: -436}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1074681476
@@ -1532,7 +1532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: aac63ed86c0b74446b8c97526fe375e7, type: 3}
+  m_Texture: {fileID: 2800000, guid: 683102b501623c747aa45784c472c2a5, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2011,7 +2011,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Prolific ID
+  m_Text: Participant ID
 --- !u!222 &1821312625
 CanvasRenderer:
   m_ObjectHideFlags: 0
