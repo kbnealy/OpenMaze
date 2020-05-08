@@ -1,0 +1,1071 @@
+{
+    "OutputTimesPerSecond": 30,
+    "TrialLoadingDelay": 1.0,
+    "IgnoreUserInputDelay": 0.5,
+    "MorrisMazeThreshold": 0,
+    "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
+    "CharacterData": {
+        "Height": 2,
+        "MovementSpeed": 5.0,
+        "RotationSpeed": 75.0,
+        "DistancePickup": 2,
+        "GoalRotationSpeed": 0
+    },
+
+"BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
+   
+    "BlockOrder" : [1,2,3,4,5,6,7,8,9,10,11,12,13],
+    
+    "Blocks" : [
+        {
+            "Block 1" : "Welcome To the experiment + Practice: Explore Instructions",
+              "TrialOrder": [
+                 2,3,4,5,6,7
+                ]
+        },
+        {
+            "Block 2" : "Practice: Explore the Environment Trials",
+              "TrialOrder": [
+                 8,20,19,
+                 8,20,19,
+                 8,20,19,
+                 8,20,19,
+                 8,20,19
+                ]
+        },
+        {
+            
+              "Block 3" : "Practice: Finding Money + $0.25 + Feedback/NoFeedback Instructions",
+              "TrialOrder": [
+                9,10,11,7,
+                16,21,
+                9,12,13,14,71
+              ]
+        },
+        {
+            "Block 4" : "Practice: Main Money Finding",
+              "TrialOrder": [
+                 16,22,  17,26, 15,7, 16,22,  16,22,
+                 17,26,	 16,23,  16,23,  16,23,
+                 17,26,  16,24,  16,24,  16,24,
+                 16,25,  17,26,  16,25,  16,25,
+                 17,26
+                ]
+        },
+        {
+            "Block 5" : "Square: Explore instructions",
+              "TrialOrder": [
+                 18,27,28,29,30,31
+                ]
+        },
+        {
+            
+              "Block 6" : "Square: Explore The Trials",
+              "TrialOrder": [
+              	 32,45,44,
+              	 32,45,44,
+              	 32,45,44,
+              	 32,45,44,
+              	 32,45,44
+                ]
+        },
+        {
+            "Block 7": "Square: Finding Money + $0.25 + Feedback/NoFeedback instructions",
+            "TrialOrder": [
+            	33,34,35,31,40,46,33,36,37,38,39,31
+            	]
+        },
+        {
+            "Block 8": "Square: Main Money Finding",
+            "TrialOrder": [
+            	 40,47,  41,53,  40,47,  40,47,
+            	 41,53,  40,48,  40,48,  40,48,  42,
+            	 41,53,  40,49,  40,49,  40,49,
+            	 40,50,  41,53,  40,50,  40,50,  42,
+            	 40,51,  40,51,  40,51,  41,53,
+            	 40,52,  40,52,  40,52,  42,
+
+            	 40,47,  40,47,
+            	 40,48,  41,53,  40,48,
+            	 40,49,  40,49,  42,
+            	 40,50,  40,50,
+            	 40,51,  40,51,
+            	 40,52,  40,52, 41,53, 41,53, 54
+            	]
+        },
+        {
+            "Block 9": "WaterMaze: Visible Instructions",
+            "TrialOrder": [
+            	55,56,57,58,31
+            	]
+        },
+        {
+            "Block 10": "WaterMaze: Visible Trial",
+            "TrialOrder": [
+            	60,63
+            	]
+        },
+        {
+            "Block 11": "WaterMaze invisible Instructions",
+            "TrialOrder": [
+            	59,31
+            	]
+        },
+        {
+            "Block 12": "WaterMaze invisible Trials",
+            "TrialOrder": [
+            	60,64,  60,65,  60,66,  60,67,  60,68,  60,69,  60,70
+            	]
+        },
+        {
+            "Block 13": "Experiment End Screen",
+            "TrialOrder": [
+            	62
+            	]
+        }
+    ],
+
+"TRIAL DATA" : "PRACTICE TRIALS--------------------*********------------------PRACTICE TRIALS",
+    
+    "Trials": [
+        {
+            "Trial 1" : "Welcome Screen 1",
+            "Instructional": 1,
+            "FileLocation": "Practice/Welcome1.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "Trial 2" : "Welcome Screen 2",
+            "Instructional": 1,
+            "FileLocation": "Practice/Welcome2.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "3" : "Section 1: Practice",
+            "Instructional": 1,
+            "FileLocation": "Practice/Section1.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "4" : "Practice: Explore",
+            "Instructional": 1,
+            "FileLocation": "Practice/ExploreRound.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "5" : "Controls",
+            "Instructional": 1,
+            "FileLocation": "Practice/Controls.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "6" : "Top-Down  View",
+            "Instructional": 1,
+            "FileLocation": "Practice/TopDown.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "7" : "Get Ready",
+            "Instructional": 1,
+            "FileLocation": "Practice/Ready.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "8" : "Explore The environment!",
+            "Instructional": 1,
+            "FileLocation": "Practice/Explore.png",
+            "TrialTime": 1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "9" : "GreatWork",
+            "Instructional": 1,
+            "FileLocation": "Practice/GreatWork.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "10" : "Practice: Finding Money",
+            "Instructional": 1,
+            "FileLocation": "Practice/FindingMoney.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "11" : "Headphones screen",
+            "Instructional": 1,
+            "FileLocation": "Practice/Headphones.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "12" : "Practice: Money Collection Rounds",
+            "Instructional": 1,
+            "FileLocation": "Practice/Collection.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "13" : "Practice: Feedback Rounds",
+            "Instructional": 1,
+            "FileLocation": "Practice/Feedback.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "14" : "Practice: No Feedback Rounds",
+            "Instructional": 1,
+            "FileLocation": "Practice/NoFeedback.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "15" : "Collect as much as you can!",
+            "Instructional": 1,
+            "FileLocation": "Practice/Unlimited.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "16" : "Search for money Cue",
+            "Instructional": 1,
+            "FileLocation": "Practice/Money.png",
+            "TrialTime": 1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "17" : "Search for money No Feedback Cue",
+            "Instructional": 1,
+            "FileLocation": "Practice/MoneyNF.png",
+            "TrialTime": 1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "18" : "You've Completed the Practice Section!",
+            "Instructional": 1,
+            "FileLocation": "Practice/Complete.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "19": "Where were you?",
+            "TwoDimensional" : 1,
+            "Header": "Where Were You?",
+            "Scene" : 5,
+            "TrialTime" : 1000,
+            "TrialEndKey": "Space"
+
+        }, 
+        {
+            "20" : "Explore",
+            "Header": "Explore!",
+            "ShowCollectedPerBlock" : false,
+            "TrialTime" : 30,
+            "Scene": 4,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 1,
+            "Quota": 50,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "21" : "Collect $0.25",
+            "Header": "Collect $0.25",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 10000,
+            "Scene": 4,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [1],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 1,
+            "Quota": 25,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "22" : "Reward Location 1",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 4,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [1],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 1,
+            "Quota": 2000,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "23" : "Reward Location 2",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 4,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [2],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 1,
+            "Quota": 2000,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "24" : "Reward Location 3",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 4,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [3],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 1,
+            "Quota": 2000,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "25" : "Reward Location 4",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 4,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [4],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 1,
+            "Quota": 2000,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "26" : "Catch Trial",
+            "Header": "Find $$$",
+            "ShowCollectedPerBlock" : false,
+            "TrialTime" : 60,
+            "Scene": 4,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 1,
+            "Quota": 2000,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "27" : "Section 2*********************************************************Square TRIALS",
+            "Instructional": 1,
+            "FileLocation": "Square/Section.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "28" : "Explore",
+            "Instructional": 1,
+            "FileLocation": "Square/ExploreRound.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "29" : "Controls",
+            "Instructional": -1,
+            "FileLocation": "Square/Controls.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "30" : "TopDown",
+            "Instructional": 1,
+            "FileLocation": "Square/TopDown.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "31" : "Ready",
+            "Instructional": 1,
+            "FileLocation": "Square/Ready.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "32" : "Explore The Environment Cue Screen",
+            "Instructional": 1,
+            "FileLocation": "Square/Explore.png",
+            "TrialTime": 1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "33" : "Great Work!",
+            "Instructional": 1,
+            "FileLocation": "Square/GreatWork.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "34" : "Finding Money",
+            "Instructional": 1,
+            "FileLocation": "Square/FindingMoney.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "35" : "Headphones",
+            "Instructional": 1,
+            "FileLocation": "Square/Headphones.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "36" : "MoneyCollections",
+            "Instructional": 1,
+            "FileLocation": "Square/Collection.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "37" : "Feedback instructions",
+            "Instructional": 1,
+            "FileLocation": "Square/Feedback.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "38" : "No Feedback Instructions",
+            "Instructional": 1,
+            "FileLocation": "Square/NoFeedback.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "39" : "Bonus Payment Instruction screen",
+            "Instructional": 1,
+            "FileLocation": "Square/Unlimited.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "40" : "Search for Money Cue",
+            "Instructional": 1,
+            "FileLocation": "Square/Money.png",
+            "TrialTime": 1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "41" : "Search for Money No Feedback Cue",
+            "Instructional": 1,
+            "FileLocation": "Square/MoneyNF.png",
+            "TrialTime": 1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "42" : "Break",
+            "Instructional": 1,
+            "FileLocation": "Square/Break.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "43" : "You've Completed the BONUS PAY",
+            "Instructional": 1,
+            "FileLocation": "Square/Complete.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "44": "2D Trial",
+            "TwoDimensional" : 1,
+            "Header": "Where Were You?",
+            "Scene" : 3,
+            "TrialTime" : 1000,
+            "TrialEndKey": "Space"
+
+        }, 
+        {
+            "45" : "Explore Trial",
+            "Header": "Explore!",
+            "ShowCollectedPerTrial" : false,
+            "TrialTime" : 30,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 3,
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "o"
+        },
+        {
+            "46" : "Collect $0.25",
+            "Header": "Collect $0.25",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 10000,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [5],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 3,
+            "Quota": 25,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "o"
+        },
+        {
+            "47" : "Reward Location 1",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [5],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 3,
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "o"
+        },
+        {
+            "48" : "Reward Location 2",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [6],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 3,
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "o"
+        },
+        {
+            "49" : "Reward Location 3",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [7],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 3,
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "o"
+        },
+        {
+            "50" : "Reward Location 4",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [8],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 3,
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "o"
+        },
+        {
+            "51" : "Reward Location 5",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [9],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 3,
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "o"
+        },
+        {
+            "52" : "Reward Location 6",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : true,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [10],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 3,
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "o"
+        },
+        {
+            "53" : "Catch Trial",
+            "Header": "Find $$$",
+            "ShowCollectedPerTrial" : false,
+            "TrialTime" : 60,
+            "Scene": 2,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Enclosure": 3,
+            "Quota": 5000,
+            "LandMarks" :[1,2,3,4],
+            "TrialEndKey": "o"
+        },
+        {
+            "54" : "End Trial",
+            "Header": "NO FEEDBACK BONUS: $0.52 \nPLEASE NOTIFY THE EXPERIMENTER THAT \nYOU HAVE COMPLETED THIS PORTION OF THE EXPERIMENT",
+            "ShowCollectedPerBlock" : true,
+            "TrialTime" : 600,
+            "Scene": 6,
+            "StartPosition" : [],
+            "StartFacing" : -1,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Quota": 5000,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "55": "Section 3 WATERMAZE************************************************ WATERMAZE TRIALS",
+            "Instructional": 1,
+            "FileLocation": "ID/Section.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "56": "Find the Trophy",
+            "Instructional": 1,
+            "FileLocation": "ID/Find.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "57": "Controls",
+            "Instructional": 1,
+            "FileLocation": "ID/Controls.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "58": "Find the Trophy Visible Instructions",
+            "Instructional": 1,
+            "FileLocation": "ID/Visible.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "59": "Find the Trophy Invisible Instructions",
+            "Instructional": 1,
+            "FileLocation": "ID/Invisible.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "60": "Find the Trophy Cue",
+            "Instructional": 1,
+            "FileLocation": "ID/Trophy.png",
+            "TrialTime": 1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "61": "Get Ready",
+            "Instructional": 1,
+            "FileLocation": "ID/Ready.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "62": "You've Completed the FIND THE TROPHY",
+            "Instructional": 1,
+            "FileLocation": "ID/Complete.png",
+            "TrialTime": -1,
+            "TrialEndKey": "i",
+            "ExitButton": true
+        },
+        {
+            "63": "Visible Reward Trial",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [-10, -10],
+            "StartFacing": 60,
+            "Rotate": 0,
+            "Enclosure": 4,
+            "ActiveGoals": [11,12],
+            "InvisibleGoals": [],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "64": "Startging Position 1",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [-10, 10],
+            "StartFacing": 145,
+            "Rotate": 0,
+            "Enclosure": 4,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "65": "Startging Position 2",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [10, 10],
+            "StartFacing": 255,
+            "Rotate": 0,
+            "Enclosure": 4,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "66": "Startging Position 3",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [10, -10],
+            "StartFacing": -80,
+            "Rotate": 0,
+            "Enclosure": 4,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "67": "Startging Position 4",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [0, 0],
+            "StartFacing": 202,
+            "Rotate": 0,
+            "Enclosure": 4,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "68": "Startging Position 5",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [0, -10],
+            "StartFacing": -24,
+            "Rotate": 0,
+            "Enclosure": 4,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "69": "Startging Position 6",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [-10, 0],
+            "StartFacing": 120,
+            "Rotate": 0,
+            "Enclosure": 4,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "70": "No Goal - 1 minute search",
+            "Header": "Find The Trophy!",
+            "TrialTime": 60,
+            "Scene": 7,
+            "StartPosition": [-10, -8],
+            "StartFacing": -20,
+            "Rotate": 0,
+            "Enclosure": 4,
+            "ActiveGoals": [],
+            "InvisibleGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "71": "Pactice Feedback No Feedback",
+            "Instructional": 1,
+            "FileLocation": "Practice/FBNFB.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        }
+    ],
+
+
+"GOAL DATA" : "GOAL DATA--------------------*********------------------GOAL DATA",
+
+    "Goals": [
+        {
+            "Goal 1" : "Practice Location 1",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [4.1, 1, 4.75],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 2" : "Practice Location 2",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [5, 1, 6.7],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 3" : "Practice Location 3",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [9.7, 1, 5.7],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 4" : "Practice Location 4",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [8, 1, 6.5],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 5" : "Square Location 1",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [8.4, 1, 9.6],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 6" : "Square Location 2",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [5.7, 1, 7.2],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 7" : "Square Location 3",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [4.2, 1, 8.25],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 8" : "Square Location 4",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [5.85, 1, 4.8],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 9" : "Square Location 5",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [9.3, 1, 6.45],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 10" : "Square Location 6",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [10.8, 1, 5.55],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 11" : "WaterMaze Trophy",
+            "Type": "3D",
+            "Object": "Trophy",
+            "Color": "ffffff",
+            "Sound": "Success",
+            "Position": [5, 0.97, 7],
+            "Scale": [8, 8, 8]
+        },
+        {
+            "Goal 12" : "WaterMaze Podium/Reward Location",
+            "Type": "3D",
+            "Object": "Cylinder",
+            "Color": "ffffff",
+            "Sound": "Success",
+            "Position": [5, 0, 7],
+            "Scale": [3, 1, 3]
+        }
+
+    ],
+
+"LANDMARK DATA" : "LANDMARK DATA----------*********------------------LANDMARK DATA",
+
+    "Landmarks": [
+    	{
+            "Landmark 1" : "Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
+            "Color": "ff0000",
+            "Position": [30, 18, 0],
+            "Scale": [0.1, 8, 8]
+        },
+        {
+            "Landmark 2" : "Green Cube",
+            "Type": "3D",
+            "Object": "Cube",
+            "Color": "00ff00",
+            "Position": [0, 18, -30],
+            "Scale": [8,8,0.1]
+        },
+        {
+            "Landmark 3" : "Blue Rectangle",
+            "Type": "3D",
+            "Object": "Cube",
+            "Color": "0000ff",
+            "Position": [0, 16, 30],
+            "Scale": [16,4,0.1]
+        },
+        {
+            "Landmark 4" : "Yellow Triangle",
+            "Type": "3D",
+            "Object": "Prism",
+            "Color": "ffff00",
+            "Position": [-30,14,4],
+            "Rotation": [0,90,0],
+            "Scale": [8, 8, 0.1]
+        }
+    ], 
+
+"Maze DATA" : "Maze DATA--------------------*********------------------Maze DATA",
+
+    "Enclosures": [
+        {
+            "Enclosure 3": "Practice",
+            "Sides": 40,
+            "Radius": 15,
+            "WallHeight" : 7,
+            "WallColor": "ffffff00",
+            "GroundTileSides": 4,
+            "GroundTileSize": 1,
+            "GroundColor": "ffffff",
+            "Position": [0, 0],
+            "InitialRotation": 0
+        },
+        {
+            "Enclosure 2": "Square",
+            "Sides": 40,
+            "Radius": 15,
+            "WallHeight" : 7,
+            "WallColor": "ffffff",
+            "GroundTileSides": 0,
+            "GroundTileSize": 1,
+            "GroundColor": "ffffff",
+            "Position": [0, 0],
+            "InitialRotation": 0
+        },
+        {
+            "Enclosure 3": "Square",
+            "Sides": 4,
+            "Radius": 15,
+            "WallHeight" : 7,
+            "WallColor": "ffffff",
+            "GroundTileSides": 0,
+            "GroundTileSize": 1,
+            "GroundColor": "ffffff",
+            "Position": [0, 0],
+            "InitialRotation": 0
+        },
+        {
+            "Enclosure 4": "WaterMaze",
+            "Sides": 5,
+            "Radius": 20,
+            "WallHeight": 3,
+            "WallColor": "000000",
+            "GroundTileSides": 4,
+            "GroundTileSize": 1,
+            "GroundColor": "000000",
+            "Position": [0, 0],
+            "InitialRotation": 0
+
+        }
+    ]
+}
