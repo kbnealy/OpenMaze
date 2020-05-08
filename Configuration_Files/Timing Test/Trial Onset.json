@@ -1,0 +1,253 @@
+{
+    "OutputTimesPerSecond": 30,
+    "IgnoreUserInputDelay": 0.5,
+    "TimingVerification": true,
+    "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
+    "CharacterData": {
+        "Height": 2,
+        "MovementSpeed": 5.0,
+        "RotationSpeed": 75.0,
+        "DistancePickup": 2,
+        "GoalRotationSpeed": 0
+    },
+
+"BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
+   
+    "BlockOrder" : [1,2,3,4],
+    
+    "Blocks" : [
+        {
+            "Block 1" : "low demand",
+              "Notes" : "Trials will be presented in order from TrialOrder list",
+              "TrialOrder": [1,2,1,2,1,2]
+        },
+        {
+            "Block 1" : "Medium Demand",
+              "Notes" : "Trials will be presented in order from TrialOrder list",
+              "TrialOrder": [
+                1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,
+                1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,
+                1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,
+                1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,
+                1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3]
+        },
+        {
+            "Block 1" : "High Demand",
+              "Notes" : "Trials will be presented in order from TrialOrder list",
+              "TrialOrder": [
+                1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,
+                1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,
+                1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,
+                1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,
+                1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4,1,4]
+        },
+        {
+            "Block 1" : "low demand",
+              "Notes" : "Trials will be presented in order from TrialOrder list",
+              "TrialOrder": [
+                1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,
+                1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,
+                1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,
+                1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,
+                1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5,1,5]
+        }  
+    ],
+
+"TRIAL DATA" : "TRIAL DATA--------------------*********------------------TRIAL DATA",
+    
+    "Trials": [
+        {
+            "Trial 1" : "Black",
+            "Instructional": 1,
+            "FileLocation": "Tutorial_Instructions/Black.png",
+            "TrialTime": 2,
+            "TrialEndKey": "x"
+        },
+        {
+            "Trial 2" : "White",
+            "Instructional": 1,
+            "FileLocation": "Tutorial_Instructions/White.png",
+            "TrialTime": 3,
+            "TrialEndKey": "x"
+        },
+        {
+            "Trial 3" : "Low Demand",
+            "Header": "Collect the Objects!",
+            "TrialTime" : 2,
+            "Scene": 2,
+            "StartPosition" : [0,0],
+            "StartFacing" : 0,
+            "Rotate": 0,
+            "ActiveGoals" : [1,2,3],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Quota": 2,
+            "LandMarks" :[1,2,3],
+            "TrialEndKey": "x"
+        },
+        {
+            "Trial 4" : "Medium Demand",
+            "Header": "Collect the Objects!",
+            "TrialTime" : 2,
+            "Scene": 3,
+            "Enclosure": 1,
+            "StartPosition" : [0,0],
+            "StartFacing" : 0,
+            "Rotate": 0,
+            "ActiveGoals" : [1,2,3],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Quota": 2,
+            "LandMarks" :[1,2,3],
+            "TrialEndKey": "x"
+        },
+        {
+            "Trial 5" : "High demand",
+            "Header": "Collect the Objects!",
+            "TrialTime" : 2,
+            "Scene": 4,
+            "Enclosure": 2,
+            "StartPosition" : [0,0],
+            "StartFacing" : 0,
+            "Rotate": 0,
+            "ActiveGoals" : [1,2,3,4,5],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Quota": 2,
+            "LandMarks" :[1,2,3,4,5],
+            "TrialEndKey": "x"
+        }
+    ],
+
+
+"GOAL DATA" : "GOAL DATA--------------------*********------------------GOAL DATA",
+
+    "Goals": [
+        {
+            "Goal 1" : "3D Object - Red Sphere",
+            "Type": "2D",
+            "Object": "Tutorial_Objects/Apple.png",
+            "Sound": "Beep",
+            "Color": "ff0000",
+            "Position": [5, 1, 0],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 2" : "2D Image - Apple",
+            "Type": "2D",
+            "Object": "Tutorial_Objects/Apple.png",
+            "Sound": "Beep",
+            "Color": "ffffff",
+            "Position": [-5, 1, 0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 3" : "3D Object - Red Sphere",
+            "Type": "2D",
+            "Object": "Tutorial_Objects/Apple.png",
+            "Sound": "Beep",
+            "Color": "ff0000",
+            "Position": [5, 1, 5],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 4" : "2D Image - Apple",
+            "Type": "2D",
+            "Object": "Tutorial_Objects/Apple.png",
+            "Sound": "Beep",
+            "Color": "ffffff",
+            "Position": [-5, 1, -5],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 5" : "3D Object - Red Sphere",
+            "Type": "2D",
+            "Object": "Tutorial_Objects/Apple.png",
+            "Sound": "Beep",
+            "Color": "ff0000",
+            "Position": [5, 1, -5],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        }
+    ],
+
+"LANDMARK DATA" : "LANDMARK DATA----------*********------------------LANDMARK DATA",
+
+    "Landmarks": [
+        {
+            "Landmark 2" : "Red Sphere",
+            "Type": "3D",
+            "Object": "L1",
+            "Color": "ff0000",
+            "Position": [100, 2, 0],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Landmark 3" : "Red Sphere",
+            "Type": "3D",
+            "Object": "L2",
+            "Color": "ff0000",
+            "Position": [-100, 2, 0],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Landmark 4" : "Red Sphere",
+            "Type": "3D",
+            "Object": "L3",
+            "Color": "ff0000",
+            "Position": [100, 2, 100],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Landmark 5" : "Red Sphere",
+            "Type": "3D",
+            "Object": "L4",
+            "Color": "ff0000",
+            "Position": [-100, 2, 100],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Landmark 6" : "Red Sphere",
+            "Type": "3D",
+            "Object": "L5",
+            "Color": "ff0000",
+            "Position": [-100, 2, -100],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        }
+
+    ], 
+
+"Enclosure DATA" : "Enclosure DATA--------------------*********------------------Enclosure DATA",
+
+    "Enclosures": [
+        {
+            "Enclosure 1": "Use this field as lable",
+            "Sides": 4,
+            "Radius": 15,
+            "WallHeight" : 7,
+            "WallColor": "ffffff",
+            "GroundTileSides": 4,
+            "GroundTileSize": 1.0,
+            "GroundColor": "1B5E20",
+            "Position": [0, 0]
+        },
+        {
+            "Enclosure 2": "Use this field as lable",
+            "Sides": 40,
+            "Radius": 30,
+            "WallHeight" : 15,
+            "WallColor": "000000",
+            "GroundTileSides": 40,
+            "GroundTileSize": 1.0,
+            "GroundColor": "1B5E20",
+            "Position": [0, 0]
+        }  
+    ]
+}

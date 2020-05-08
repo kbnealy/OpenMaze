@@ -1,0 +1,207 @@
+{
+    "OutputTimesPerSecond": 30,
+    "IgnoreUserInputDelay": 0.5,
+    "TimingVerification": false,
+    "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
+    "CharacterData": {
+        "Height": 2,
+        "MovementSpeed": 5.0,
+        "RotationSpeed": 75.0,
+        "DistancePickup": 2,
+        "GoalRotationSpeed": 0
+    },
+
+"BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
+   
+    "BlockOrder" : [1],
+    
+    "Blocks" : [
+        {
+            "Block 1" : "Serial Trial Order",
+              "Notes" : "Trials will be presented in order from TrialOrder list",
+              "TrialOrder": [1,2,1,2]
+        },
+        {
+            
+              "Block 2" : "Random With Replacement - Randomly select single trials",
+              "Notes" : "Each time trial 0 is called in trial order it will select a RandomGroup from RandomTrialType list",
+              "TrialOrder": [
+                    0,0
+                ],
+              "Replacement" : 1,
+              "RandomlySelect" : [{"Order": [1,2]},{"Order": [1,2]}]
+        },
+        {
+            
+              "Block 3" : "Random Without Replacement - Randomly select ordered trial list Trials in Random Groups",
+              "Notes" : "When a Random group is chosen it will present all trials in order from the group before moving on to the next random selection",
+              "TrialOrder": [
+                    0,0
+                ],
+              "Replacement" : 0,
+              "RandomlySelect" : [{"Order": [1, 2]},{"Order": [1,2]}]
+        }    
+    ],
+
+"TRIAL DATA" : "TRIAL DATA--------------------*********------------------TRIAL DATA",
+    
+    "Trials": [
+        {
+            "Trial 1" : "fixation",
+            "Instructional": 1,
+            "FileLocation": "Tutorial_Instructions/Welcome.png",
+            "TrialTime": -1,
+            "TrialEndKey": "x",
+            "ExitButton": true
+
+        },
+        {
+            "Trial 2" : "Simple Scene + 3 goals + 3 landmarks",
+            "Header": "Collect the Objects!",
+            "TrialTime" : 60,
+            "Scene": 2,
+            "Enclosure": 1,
+            "StartPosition" : [0,0],
+            "StartFacing" : 0,
+            "Rotate": 0,
+            "ActiveGoals" : [1,2],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Quota": 2,
+            "LandMarks" :[1],
+            "TrialEndKey": "x"
+        }
+    ],
+
+
+"GOAL DATA" : "GOAL DATA--------------------*********------------------GOAL DATA",
+
+    "Goals": [
+        {
+            "Goal 1" : "3D Object - Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
+            "Sound": "Beep",
+            "Color": "ff0000",
+            "Position": [5, 1, 0],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 2" : "2D Image - Apple",
+            "Type": "2D",
+            "Object": "Tutorial_Objects/Apple.png",
+            "Sound": "Beep",
+            "Color": "ffffff",
+            "Position": [-5, 1, 0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 3" : "3D Object - Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
+            "Sound": "Beep",
+            "Color": "ff0000",
+            "Position": [5, 1, 5],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 4" : "2D Image - Apple",
+            "Type": "2D",
+            "Object": "Tutorial_Objects/Apple.png",
+            "Sound": "Beep",
+            "Color": "ffffff",
+            "Position": [-5, 1, -5],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 5" : "3D Object - Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
+            "Sound": "Beep",
+            "Color": "ff0000",
+            "Position": [5, 1, -5],
+            "Rotation": [0,0,0],
+            "Scale": [1, 1, 1]
+        }
+    ],
+
+"LANDMARK DATA" : "LANDMARK DATA----------*********------------------LANDMARK DATA",
+
+    "Landmarks": [
+        {
+            "Landmark 2" : "Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
+            "Color": "ff0000",
+            "Position": [10, 2, 0],
+            "Rotation": [0,0,0],
+            "Scale": [20, 20, 20]
+        },
+        {
+            "Landmark 3" : "Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
+            "Color": "ff0000",
+            "Position": [-10, 2, 0],
+            "Rotation": [0,0,0],
+            "Scale": [20, 20, 20]
+        },
+        {
+            "Landmark 4" : "Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
+            "Color": "ff0000",
+            "Position": [10, 2, 10],
+            "Rotation": [0,0,0],
+            "Scale": [20, 20, 20]
+        },
+        {
+            "Landmark 5" : "Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
+            "Color": "ff0000",
+            "Position": [-10, 2, 10],
+            "Rotation": [0,0,0],
+            "Scale": [20, 20, 20]
+        },
+        {
+            "Landmark 6" : "Red Sphere",
+            "Type": "3D",
+            "Object": "Sphere",
+            "Color": "ff0000",
+            "Position": [-10, 2, -10],
+            "Rotation": [0,0,0],
+            "Scale": [20, 20, 20]
+        }
+
+    ], 
+
+"Enclosure DATA" : "Enclosure DATA--------------------*********------------------Enclosure DATA",
+
+    "Enclosures": [
+        {
+            "Enclosure 1": "Use this field as lable",
+            "Sides": 40,
+            "Radius": 15,
+            "WallHeight" : 7,
+            "WallColor": "ffffff",
+            "GroundTileSides": 4,
+            "GroundTileSize": 1.0,
+            "GroundColor": "1B5E20",
+            "Position": [0, 0]
+        },
+        {
+            "Enclosure 2": "Use this field as lable",
+            "Sides": 4,
+            "Radius": 30,
+            "WallHeight" : 15,
+            "WallColor": "000000",
+            "GroundTileSides": 4,
+            "GroundTileSize": 1.0,
+            "GroundColor": "1B5E20",
+            "Position": [0, 0]
+        }  
+    ]
+}
