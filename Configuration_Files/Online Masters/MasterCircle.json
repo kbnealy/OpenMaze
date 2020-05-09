@@ -1,6 +1,5 @@
 {
     "OutputTimesPerSecond": 30,
-    "TrialLoadingDelay": 1.0,
     "IgnoreUserInputDelay": 0.5,
     "MorrisMazeThreshold": 0,
     "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
