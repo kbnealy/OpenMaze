@@ -14,7 +14,7 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [1,2,3,4,5,6,7,8,9,10,11,12,13],
+    "BlockOrder" : [1,2,3,4,5,6,7,8,9,10,11],
     
     "Blocks" : [
         {
@@ -35,7 +35,7 @@
         },
         {
             
-              "Block 3" : "Practice: Finding Money + $0.25 + Feedback/NoFeedback Instructions",
+            "Block 3" : "Practice: Finding Money + $0.25 + Feedback/NoFeedback Instructions",
               "TrialOrder": [
                 9,10,11,7,
                 16,21,
@@ -60,7 +60,7 @@
         },
         {
             
-              "Block 6" : "Square: Explore The Trials",
+            "Block 6" : "Square: Explore The Trials",
               "TrialOrder": [
               	 32,45,44,
               	 32,45,44,
@@ -71,13 +71,13 @@
         },
         {
             "Block 7": "Square: Finding Money + $0.25 + Feedback/NoFeedback instructions",
-            "TrialOrder": [
+                "TrialOrder": [
             	33,34,35,31,40,46,33,36,37,38,39,31
             	]
         },
         {
             "Block 8": "Square: Main Money Finding",
-            "TrialOrder": [
+                "TrialOrder": [
             	 40,47,  41,53,  40,47,  40,47,
             	 41,53,  40,48,  40,48,  40,48,  42,
             	 41,53,  40,49,  40,49,  40,49,
@@ -95,32 +95,20 @@
         },
         {
             "Block 9": "WaterMaze: Visible Instructions",
-            "TrialOrder": [
+                "TrialOrder": [
             	55,56,57,58,31
             	]
         },
         {
             "Block 10": "WaterMaze: Visible Trial",
-            "TrialOrder": [
-            	60,63
+                "TrialOrder": [
+            	60,63,59,31
             	]
         },
         {
-            "Block 11": "WaterMaze invisible Instructions",
-            "TrialOrder": [
-            	59,31
-            	]
-        },
-        {
-            "Block 12": "WaterMaze invisible Trials",
-            "TrialOrder": [
-            	60,64,  60,65,  60,66,  60,67,  60,68,  60,69,  60,70
-            	]
-        },
-        {
-            "Block 13": "Experiment End Screen",
-            "TrialOrder": [
-            	62
+            "Block 11": "WaterMaze invisible Trials",
+                "TrialOrder": [
+            	60,64,  60,65,  60,66,  60,67,  60,68,  60,69,  60,70, 62
             	]
         }
     ],
@@ -966,7 +954,7 @@
             "Scale": [8, 8, 8]
         },
         {
-            "Goal 12" : "WaterMaze Podium/Reward Location",
+            "Goal 12" : "WaterMaze Reward Location",
             "Type": "3D",
             "Object": "Cylinder",
             "Color": "ffffff",
@@ -981,7 +969,7 @@
 
     "Landmarks": [
     	{
-            "Landmark 1" : "Red Sphere",
+            "Landmark 1" : "Red Circle",
             "Type": "3D",
             "Object": "Sphere",
             "Color": "ff0000",
@@ -989,7 +977,7 @@
             "Scale": [0.1, 8, 8]
         },
         {
-            "Landmark 2" : "Green Cube",
+            "Landmark 2" : "Green Square",
             "Type": "3D",
             "Object": "Cube",
             "Color": "00ff00",
@@ -1031,7 +1019,7 @@
             "InitialRotation": 0
         },
         {
-            "Enclosure 2": "Square",
+            "Enclosure 2": "Circle",
             "Sides": 40,
             "Radius": 15,
             "WallHeight" : 7,
