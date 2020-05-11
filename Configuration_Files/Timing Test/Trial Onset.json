@@ -19,7 +19,7 @@
         {
             "Block 1" : "low demand",
               "Notes" : "Trials will be presented in order from TrialOrder list",
-              "TrialOrder": [1,2,1,2,1,2]
+              "TrialOrder": [1,2,1,2,1,2,1]
         },
         {
             "Block 1" : "Medium Demand",

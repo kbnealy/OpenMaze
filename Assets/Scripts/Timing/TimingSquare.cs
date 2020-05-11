@@ -7,7 +7,7 @@ namespace Assets.Scripts.Timing
     public class TimingSquare : MonoBehaviour
     {
 
-        private void Start()
+        private void Update()
         {
             // testing for timing settings. 
             Debug.Log("Timing Status: " + data.DataSingleton.GetData().TimingVerification);
