@@ -57,7 +57,7 @@
             "BlockName" : "Block 2 - Points Collection Instructions",
               "Notes" : "This is a standard block of trials.",
               "TrialOrder": [
-                 24
+                 6
                 ]
         }
     ],
@@ -301,7 +301,7 @@
         {
             "24" : "Controls",
             "Instructional": 1,
-            "FileLocation": "Practice/Passed.png",
+            "FileLocation": "Practice/Controls.png",
             "TrialTime": -1,
             "TrialEndKey": "p"
         }

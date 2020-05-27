@@ -27,10 +27,13 @@ namespace twoDSystem
 
             GameObject.Find("CountDown").GetComponent<Text>().text = "";
 
-            var goalText = GameObject.Find("Goal").GetComponent<Text>();
-            goalText.GetComponent<RectTransform>().sizeDelta = new Vector2(300, 40);
-            goalText.text = E.Get().CurrTrial.trialData.Header ?? "Test";
-            goalText.color = Color.black;
+            var headerText = GameObject.Find("Header").GetComponent<Text>();
+            headerText.GetComponent<RectTransform>().sizeDelta = new Vector2(300, 40);
+            headerText.text = E.Get().CurrTrial.trialData.Header ?? "Test";
+            headerText.color = Color.black;
+
+            var RunnerText = GameObject.Find("TrialSuccess").GetComponent<Text>();
+            RunnerText.text = E.Get().CurrTrial.trialData.Runner;
 
             Generate2dWalls();
             //Removed the Generate landmarks code for MM experiment

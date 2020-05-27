@@ -42,11 +42,11 @@ namespace wallSystem
         {
             try
             {
-                var goalText = GameObject.Find("Goal").GetComponent<Text>();
-                goalText.GetComponent<RectTransform>().sizeDelta = new Vector2(300, 40);
+                var headerText = GameObject.Find("Header").GetComponent<Text>();
+                headerText.GetComponent<RectTransform>().sizeDelta = new Vector2(300, 40);
 
                 // This section sets the text
-                goalText.text = E.Get().CurrTrial.trialData.Header;
+                headerText.text = E.Get().CurrTrial.trialData.Header;
             }
             catch (NullReferenceException e)
             {
@@ -162,7 +162,11 @@ namespace wallSystem
 
             if (localQuota > 0)
             {
-                TrialProgress.GetCurrTrial().TrialProgress.NumCollectedPerBlock[BlockID]++;
+
+                if(TrialProgress.GetCurrTrial().NumCollected > DS.GetData().MorrisMazeThreshold)
+                {
+                    TrialProgress.GetCurrTrial().TrialProgress.NumCollectedPerBlock[BlockID]++;
+                }
 
                 TrialProgress.GetCurrTrial().NumCollected++;
                 E.LogData(
@@ -172,6 +176,7 @@ namespace wallSystem
                     1
                 );
             }
+
 
 
             if (--localQuota > 0) return;

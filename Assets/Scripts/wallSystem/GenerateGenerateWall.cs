@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using DS = data.DataSingleton;
 using E = main.Loader;
+using System;
 //This script is the Generate (GenerateWall) script
 //This is essentially the god class, the backbone of the project.
 namespace wallSystem
@@ -40,9 +41,8 @@ namespace wallSystem
 
             if (DS.GetData().Blocks[currBlockId].ShowNumSuccessfulTrials)
             {
-                var goalText = GameObject.Find("Goal").GetComponent<Text>();
-                goalText.color = Color.green;
-                goalText.text = "Number of successes: " + E.Get().CurrTrial.TrialProgress.NumSuccess + "/3";
+                var successText = GameObject.Find("TrialSuccess").GetComponent<Text>();
+                successText.text = "Rounds Complete: " + E.Get().CurrTrial.TrialProgress.NumSuccess + "/4";
             }
             if (DS.GetData().Trials[currTrialId].ShowCollectedPerTrial)
             {
@@ -50,35 +50,42 @@ namespace wallSystem
                 {
                     if (E.Get().CurrTrial.NumCollected <= DS.GetData().MorrisMazeThreshold)
                     {
-                        var CollectionText = GameObject.Find("CountDown").GetComponent<Text>();
-                        CollectionText.text = "Money Collected: $" +  E.Get().CurrTrial.NumCollected*0.01f + "/" + DS.GetData().MorrisMazeThreshold*0.01f;
+                        var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
+                        CollectionText.text = "Amount Collected: " +  Math.Round(E.Get().CurrTrial.NumCollected*0.5f, 2) + "¢";
                         CollectionText.color = Color.red;
-                        var goalText = GameObject.Find("Goal").GetComponent<Text>();
-                        goalText.color = Color.green;
                     }
                     else
                     {
-                        var CollectionText = GameObject.Find("CountDown").GetComponent<Text>();
-                        CollectionText.text = "Round Bonus Complete! MEGABONUS POINTS: " + (E.Get().CurrTrial.NumCollected - DS.GetData().MorrisMazeThreshold);
+                        var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
+                        CollectionText.text = "Bonus Earned This Round: " + (E.Get().CurrTrial.NumCollected - DS.GetData().MorrisMazeThreshold);
                         CollectionText.color = Color.green;
-                        var goalText = GameObject.Find("Goal").GetComponent<Text>();
-                        goalText.color = Color.green;
+                        var headerText = GameObject.Find("Header").GetComponent<Text>();
+                        headerText.text = "BONUS TIME!!!";
+                        headerText.color = Color.green;
                     }
                     //Timer.text = "Trial Bonus Complete! Keep Collecting for Mega BONUS!: " + E.Get().CurrTrial.NumCollected;
                 }
                 else
                 {
-                    var CollectionText = GameObject.Find("CountDown").GetComponent<Text>();
+                    var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
                     CollectionText.text = "Money Collected: $" + E.Get().CurrTrial.NumCollected * 0.01f;
                     CollectionText.color = Color.green;
-                    var goalText = GameObject.Find("Goal").GetComponent<Text>();
-                    goalText.color = Color.green;
+                    var headerText = GameObject.Find("Header").GetComponent<Text>();
+                    headerText.color = Color.green;
                 }
 
             }
             else if (DS.GetData().Trials[currTrialId].ShowCollectedPerBlock)
             {
-                Timer.text = "Money Collected: $" + E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId]*0.01f;
+                if(E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId] * 0.005f < 4.50)
+                {
+                    Timer.text = "Great Job! \nYour Total Bonus Payment For The Feedback AND No Feedback Rounds Was: \n$" + E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId] * 0.005f + 0.5;
+                }
+                else
+                {
+                    Timer.text = "Wow!! Congradulations!!! \nYou Earned The Maximum Bonus: $5.00";
+                }
+               
             }
             
 

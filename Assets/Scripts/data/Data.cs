@@ -88,6 +88,7 @@ namespace data
             public int TrialTime; // Allotted amount of time
             public string TrialEndKey; // The key press which will end the current trial.
             public string Header; // Note outputted out of the trial.
+            public string Runner; // Note outputted out of the trial.
             public EnclosureData Map; // The Map saved EnclosureData
             public List<int> InvisibleGoals; //The goal that are active and invisible
             public List<int> ActiveGoals; // Goals that are active and visible
