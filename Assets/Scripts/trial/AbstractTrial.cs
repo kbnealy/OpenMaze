@@ -153,7 +153,7 @@ namespace trial
                         }
 
                         Loader.Get().CurrTrial = tmp.next;
-                        next.PreEntry(TrialProgress);
+                        tmp.next.PreEntry(TrialProgress);
                         return;
                     }
                 }

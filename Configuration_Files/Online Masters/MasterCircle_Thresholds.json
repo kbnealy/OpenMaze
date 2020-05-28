@@ -13,7 +13,7 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [8,9,10,11],
+    "BlockOrder" : [1,2,3,4,5,8,9,10,11],
     
     "Blocks" : [
         {
@@ -34,7 +34,7 @@
         },
         {
             
-            "Block 3" : "Practice: Finding Money + $0.25 + Feedback/NoFeedback Instructions",
+            "Block 3" : "Practice: Finding Money 10cents + Feedback/NoFeedback Instructions",
               "TrialOrder": [
                 9,10,11,7,
                 16,21,
@@ -47,17 +47,17 @@
             "ExitFunction": "CheckFoodThresholdPercentage",
             "ExitGoal": "3",
               "TrialOrder": [
-                 16,22,  16,22,  16,22,  16,
+                 16,22,  17,26,  15, 7,  16,22,  16,22, 
                  17,26,  16,23,  16,23,  16,23,
                  17,26,  16,24,  16,24,  16,24,
-                 16,25,  17,26,  16,25,  16,25,
-                 17,26,  29 
+                 17,26,  16,25,  16,25,  16,25,
+                 1 
                 ]
         },
         {
             "Block 5" : "Circle: Explore instructions",
               "TrialOrder": [
-                 26,1,18,27,28,5,30,31
+                 18,27,28,29,30,31
                 ]
         },
         {
@@ -80,7 +80,19 @@
         {
             "Block 8": "Circle: Main Money Finding",
                 "TrialOrder": [
-                 40,47, 40,47, 40,47, 40,47, 40,47, 40,47, 54
+                 40,47,  41,53,  40,47,  40,47,
+                 41,53,  40,48,  40,48,  40,48,  42,
+                 41,53,  40,49,  40,49,  40,49,
+                 40,50,  41,53,  40,50,  40,50,  42,
+                 40,51,  40,51,  40,51,  41,53,
+                 40,52,  40,52,  40,52,  42,
+
+                 40,47,  40,47,
+                 40,48,  41,53,  40,48,
+                 40,49,  40,49,  42,
+                 40,50,  40,50,
+                 40,51,  40,51,
+                 40,52,  40,52, 41,53, 41,53, 54
                 ]
         },
         {
@@ -107,11 +119,11 @@
     
     "Trials": [
         {
-            "Trial 1" : "Congrats!",
+            "Trial 1" : "Fail",
             "Instructional": 1,
-            "FileLocation": "Practice/Congrats.png",
+            "FileLocation": "Practice/Fail.png",
             "TrialTime": -1,
-            "TrialEndKey": "Space"
+            "TrialEndKey": "o"
         },
         {
             "Trial 2" : "Welcome Screen 2",
@@ -260,7 +272,7 @@
         },
         {
             "21" : "Collect $0.10",
-            "Header": "Collect $0.10",
+            "Header": "Find 10¢",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 10000,
             "Scene": 4,
@@ -271,7 +283,7 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 25,
+            "Quota": 20,
             "LandMarks" :[],
             "TrialEndKey": "o"
         },
@@ -345,18 +357,17 @@
         },
         {
             "26" : "Catch Trial",
-            "Header": "No Feedback Round!",
-            "Runner": "Rounds Complete: 3/4",
+            "Header": "Find 10¢\nNo Feedback Round!",
             "TrialTime" : 60,
             "Scene": 4,
             "StartPosition" : [],
             "StartFacing" : -1,
             "Rotate": 0,
-            "ActiveGoals" : [],
+            "ActiveGoals" : [13],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 240,
+            "Quota": 20,
             "LandMarks" :[],
             "TrialEndKey": "o"
         },
@@ -375,11 +386,11 @@
             "TrialEndKey": "Space"
         },
         {
-            "29" : "Sorry",
+            "29" : "Controls",
             "Instructional": -1,
-            "FileLocation": "Pracice/Sorry.png",
+            "FileLocation": "Circle/Controls.png",
             "TrialTime": -1,
-            "TrialEndKey": "o"
+            "TrialEndKey": "Space"
         },
         {
             "30" : "TopDown",
@@ -950,6 +961,14 @@
             "Sound": "Success",
             "Position": [5, 0, 7],
             "Scale": [3, 1, 3]
+        },
+        {
+            "Goal 13" : "Practice No Feedback",
+            "Type": "3D",
+            "Object": "RewardZoneS",
+            "Color": "ff0000",
+            "Position": [6.7, 1, 5.9],
+            "Scale": [1, 1, 1]
         }
 
     ],

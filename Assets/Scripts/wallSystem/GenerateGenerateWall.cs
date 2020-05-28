@@ -42,25 +42,33 @@ namespace wallSystem
             if (DS.GetData().Blocks[currBlockId].ShowNumSuccessfulTrials)
             {
                 var successText = GameObject.Find("TrialSuccess").GetComponent<Text>();
-                successText.text = "Rounds Complete: " + E.Get().CurrTrial.TrialProgress.NumSuccess + "/4";
+                successText.text = "Rounds Complete: " + E.Get().CurrTrial.TrialProgress.NumSuccess + "/3";
             }
             if (DS.GetData().Trials[currTrialId].ShowCollectedPerTrial)
             {
                 if (DS.GetData().MorrisMazeThreshold != 0)
                 {
-                    if (E.Get().CurrTrial.NumCollected <= DS.GetData().MorrisMazeThreshold)
+                    if (E.Get().CurrTrial.NumCollected < DS.GetData().MorrisMazeThreshold)
                     {
                         var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
                         CollectionText.text = "Amount Collected: " +  Math.Round(E.Get().CurrTrial.NumCollected*0.5f, 2) + "¢";
                         CollectionText.color = Color.red;
                     }
-                    else
+                    else if (E.Get().CurrTrial.NumCollected >= DS.GetData().MorrisMazeThreshold & E.Get().CurrTrial.enclosure.WallColor != "ffffff00")
                     {
                         var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
                         CollectionText.text = "Bonus Earned This Round: " + Math.Round(E.Get().CurrTrial.NumCollected * 0.5f, 2) + "¢";
                         CollectionText.color = Color.green;
                         var headerText = GameObject.Find("Header").GetComponent<Text>();
                         headerText.text = "BONUS TIME!!!";
+                        headerText.color = Color.green;
+                    }
+                    else
+                    {
+                        var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
+                        CollectionText.color = Color.green;
+                        CollectionText.text = "Amount Collected: " + Math.Round(E.Get().CurrTrial.NumCollected * 0.5f, 2) + "¢";
+                        var headerText = GameObject.Find("Header").GetComponent<Text>();
                         headerText.color = Color.green;
                     }
                     //Timer.text = "Trial Bonus Complete! Keep Collecting for Mega BONUS!: " + E.Get().CurrTrial.NumCollected;
