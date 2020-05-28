@@ -57,7 +57,7 @@ namespace wallSystem
                     else
                     {
                         var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
-                        CollectionText.text = "Bonus Earned This Round: " + (E.Get().CurrTrial.NumCollected - DS.GetData().MorrisMazeThreshold);
+                        CollectionText.text = "Bonus Earned This Round: " + Math.Round(E.Get().CurrTrial.NumCollected * 0.5f, 2) + "¢";
                         CollectionText.color = Color.green;
                         var headerText = GameObject.Find("Header").GetComponent<Text>();
                         headerText.text = "BONUS TIME!!!";
@@ -79,7 +79,7 @@ namespace wallSystem
             {
                 if(E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId] * 0.005f < 4.50)
                 {
-                    Timer.text = "Great Job! \nYour Total Bonus Payment For The Feedback AND No Feedback Rounds Was: \n$" + E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId] * 0.005f + 0.5;
+                    Timer.text = "Great Job! \nYou Earned a Bonus Payment of $" + Math.Round(E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId] * 0.005 + 0.5f, 2) ;
                 }
                 else
                 {

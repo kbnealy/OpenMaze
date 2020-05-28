@@ -163,10 +163,14 @@ namespace wallSystem
             if (localQuota > 0)
             {
 
-                if(TrialProgress.GetCurrTrial().NumCollected > DS.GetData().MorrisMazeThreshold)
-                {
-                    TrialProgress.GetCurrTrial().TrialProgress.NumCollectedPerBlock[BlockID]++;
-                }
+                if(TrialProgress.GetCurrTrial().NumCollected == DS.GetData().MorrisMazeThreshold)
+                    {
+                        TrialProgress.GetCurrTrial().TrialProgress.NumCollectedPerBlock[BlockID] += DS.GetData().MorrisMazeThreshold; 
+                    }
+                else if(TrialProgress.GetCurrTrial().NumCollected > DS.GetData().MorrisMazeThreshold)
+                    {
+                        TrialProgress.GetCurrTrial().TrialProgress.NumCollectedPerBlock[BlockID]++;
+                    }
 
                 TrialProgress.GetCurrTrial().NumCollected++;
                 E.LogData(

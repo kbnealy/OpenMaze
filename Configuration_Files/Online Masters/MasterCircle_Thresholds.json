@@ -80,19 +80,7 @@
         {
             "Block 8": "Circle: Main Money Finding",
                 "TrialOrder": [
-                 40,47,  41,53,  40,47,  40,47,
-                 41,53,  40,48,  40,48,  40,48,  42,
-                 41,53,  40,49,  40,49,  40,49,
-                 40,50,  41,53,  40,50,  40,50,  42,
-                 40,51,  40,51,  40,51,  41,53,
-                 40,52,  40,52,  40,52,  42,
-
-                 40,47,  40,47,
-                 40,48,  41,53,  40,48,
-                 40,49,  40,49,  42,
-                 40,50,  40,50,
-                 40,51,  40,51,
-                 40,52,  40,52, 41,53, 41,53, 54
+                 40,47, 40,47, 40,47, 40,47, 40,47, 40,47, 54
                 ]
         },
         {
@@ -655,7 +643,6 @@
         },
         {
             "54" : "End Trial",
-            "Header": "NO FEEDBACK BONUS: $0.52 \nPLEASE NOTIFY THE EXPERIMENTER THAT \nYOU HAVE COMPLETED THIS PORTION OF THE EXPERIMENT",
             "ShowCollectedPerBlock" : true,
             "TrialTime" : 600,
             "Scene": 6,
