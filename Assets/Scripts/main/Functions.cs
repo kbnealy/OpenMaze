@@ -53,7 +53,7 @@ namespace main
             {
                 for (int i = 0; i < tp.successes.Count; i++)
                 {
-                    if (tp.successes[i] == 1) successCount++;
+                    successCount = (int)TrialProgress.GetCurrTrial().TrialProgress.NumSuccess;
                 }
 
                 Debug.Log(string.Format(

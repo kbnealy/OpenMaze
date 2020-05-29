@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using DS = data.DataSingleton;
 using E = main.Loader;
 using System;
+using data;
 //This script is the Generate (GenerateWall) script
 //This is essentially the god class, the backbone of the project.
 namespace wallSystem
@@ -42,7 +43,7 @@ namespace wallSystem
             if (DS.GetData().Blocks[currBlockId].ShowNumSuccessfulTrials)
             {
                 var successText = GameObject.Find("TrialSuccess").GetComponent<Text>();
-                successText.text = "Rounds Complete: " + E.Get().CurrTrial.TrialProgress.NumSuccess + "/3";
+                successText.text = "Rounds Complete: " + E.Get().CurrTrial.TrialProgress.NumSuccess + "/4";
             }
             if (DS.GetData().Trials[currTrialId].ShowCollectedPerTrial)
             {
@@ -51,25 +52,27 @@ namespace wallSystem
                     if (E.Get().CurrTrial.NumCollected < DS.GetData().MorrisMazeThreshold)
                     {
                         var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
-                        CollectionText.text = "Amount Collected: " +  Math.Round(E.Get().CurrTrial.NumCollected*0.5f, 2) + "¢";
+                        CollectionText.text = "Money Collected: " +  Math.Round(E.Get().CurrTrial.NumCollected*0.5f, 2) + "¢";
                         CollectionText.color = Color.red;
                     }
                     else if (E.Get().CurrTrial.NumCollected >= DS.GetData().MorrisMazeThreshold & E.Get().CurrTrial.enclosure.WallColor != "ffffff00")
                     {
                         var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
-                        CollectionText.text = "Bonus Earned This Round: " + Math.Round(E.Get().CurrTrial.NumCollected * 0.5f, 2) + "¢";
+                        CollectionText.text = "Bonus Collected: " + Math.Round(E.Get().CurrTrial.NumCollected * 0.5f, 2) + "¢";
                         CollectionText.color = Color.green;
                         var headerText = GameObject.Find("Header").GetComponent<Text>();
-                        headerText.text = "BONUS TIME!!!";
+                        headerText.text = "BONUS UNLOCKED!!";
                         headerText.color = Color.green;
                     }
-                    else
+                    else if (E.Get().CurrTrial.NumCollected >= DS.GetData().MorrisMazeThreshold)
                     {
                         var CollectionText = GameObject.Find("TrialTotal").GetComponent<Text>();
                         CollectionText.color = Color.green;
-                        CollectionText.text = "Amount Collected: " + Math.Round(E.Get().CurrTrial.NumCollected * 0.5f, 2) + "¢";
+                        CollectionText.text = "Money Collected: " + Math.Round(E.Get().CurrTrial.NumCollected * 0.5f, 2) + "¢";
                         var headerText = GameObject.Find("Header").GetComponent<Text>();
                         headerText.color = Color.green;
+                        var SuccessText = GameObject.Find("TrialSuccess").GetComponent<Text>();
+                        SuccessText.color = Color.green;
                     }
                     //Timer.text = "Trial Bonus Complete! Keep Collecting for Mega BONUS!: " + E.Get().CurrTrial.NumCollected;
                 }
@@ -81,19 +84,16 @@ namespace wallSystem
                     var headerText = GameObject.Find("Header").GetComponent<Text>();
                     headerText.color = Color.green;
                 }
-
             }
             else if (DS.GetData().Trials[currTrialId].ShowCollectedPerBlock)
             {
-                if(E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId] * 0.005f < 4.50)
-                {
                     Timer.text = "Great Job! \nYou Earned a Bonus Payment of $" + Math.Round(E.Get().CurrTrial.TrialProgress.NumCollectedPerBlock[currBlockId] * 0.005 + 0.5f, 2) ;
-                }
-                else
-                {
-                    Timer.text = "Wow!! Congradulations!!! \nYou Earned The Maximum Bonus: $5.00";
-                }
-               
+            }
+
+            if(E.Get().CurrTrial.NumCollected >= DS.GetData().MorrisMazeThreshold)
+            {
+                var SuccessText = GameObject.Find("TrialSuccess").GetComponent<Text>();
+                SuccessText.color = Color.green;
             }
             
 

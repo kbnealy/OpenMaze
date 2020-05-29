@@ -13,13 +13,13 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [1,2,3,4,5,8,9,10,11],
+    "BlockOrder" : [4,5,6,7,8,9,10,11],
     
     "Blocks" : [
         {
             "Block 1" : "Welcome To the experiment + Practice: Explore Instructions",
               "TrialOrder": [
-                 2,3,4,5,6,7
+                 2,3,5,4,7
                 ]
         },
         {
@@ -45,7 +45,7 @@
             "Block 4" : "Practice: Main Money Finding",
             "ShowNumSuccessfulTrials": true,
             "ExitFunction": "CheckFoodThresholdPercentage",
-            "ExitGoal": "3",
+            "ExitGoal": "4",
               "TrialOrder": [
                  16,22,  17,26,  15, 7,  16,22,  16,22, 
                  17,26,  16,23,  16,23,  16,23,
@@ -123,7 +123,7 @@
             "Instructional": 1,
             "FileLocation": "Practice/Fail.png",
             "TrialTime": -1,
-            "TrialEndKey": "o"
+            "ExitButton": true
         },
         {
             "Trial 2" : "Welcome Screen 2",
@@ -289,7 +289,7 @@
         },
         {
             "22" : "Reward Location 1",
-            "Header": "Find 10¢",
+            "Header": "Search For Money!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
@@ -300,13 +300,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 2000,
             "LandMarks" :[],
             "TrialEndKey": "o"
         },
         {
             "23" : "Reward Location 2",
-            "Header": "Find 10¢",
+            "Header": "Search For Money!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
@@ -317,13 +317,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 2000,
             "LandMarks" :[],
             "TrialEndKey": "o"
         },
         {
             "24" : "Reward Location 3",
-            "Header": "Find 10¢",
+            "Header": "Search For Money!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
@@ -334,13 +334,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 2000,
             "LandMarks" :[],
             "TrialEndKey": "o"
         },
         {
             "25" : "Reward Location 4",
-            "Header": "Find 10¢",
+            "Header": "Search For Money!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 4,
@@ -351,13 +351,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 2000,
             "LandMarks" :[],
             "TrialEndKey": "o"
         },
         {
             "26" : "Catch Trial",
-            "Header": "Find 10¢\nNo Feedback Round!",
+            "Header": "Search For Money!\nNo Feedback Round!",
             "TrialTime" : 60,
             "Scene": 4,
             "StartPosition" : [],
@@ -367,7 +367,7 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 1,
-            "Quota": 20,
+            "Quota": 2000,
             "LandMarks" :[],
             "TrialEndKey": "o"
         },
@@ -529,13 +529,13 @@
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
             "Enclosure": 2,
-            "Quota": 25,
+            "Quota": 20,
             "LandMarks" :[1,2,3,4],
             "TrialEndKey": "o"
         },
         {
             "47" : "Reward Location 1",
-            "Header": "Find 10¢ To Earn Bonus!!",
+            "Header": "",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -552,7 +552,7 @@
         },
         {
             "48" : "Reward Location 2",
-            "Header": "BFind 10¢ To Earn Bonus!!",
+            "Header": "Find 10¢ To Unlock Bonus!!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -569,7 +569,7 @@
         },
         {
             "49" : "Reward Location 3",
-            "Header": "Find 10¢ To Earn Bonus!!",
+            "Header": "Find 10¢ To Unlock Bonus!!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -586,7 +586,7 @@
         },
         {
             "50" : "Reward Location 4",
-            "Header": "Find 10¢ To Earn Bonus!!",
+            "Header": "Find 10¢ To Unlock Bonus!!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -603,7 +603,7 @@
         },
         {
             "51" : "Reward Location 5",
-            "Header": "Find 10¢ To Earn Bonus!!",
+            "Header": "Find 10¢ To Unlock Bonus!!!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
@@ -620,7 +620,7 @@
         },
         {
             "52" : "Reward Location 6",
-            "Header": "Find 10¢ To Earn Bonus!!",
+            "Header": "Find 10¢ To Unlock Bonus!!",
             "ShowCollectedPerTrial" : true,
             "TrialTime" : 60,
             "Scene": 2,
