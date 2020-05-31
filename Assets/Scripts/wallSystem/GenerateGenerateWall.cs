@@ -95,7 +95,6 @@ namespace wallSystem
                 var SuccessText = GameObject.Find("TrialSuccess").GetComponent<Text>();
                 SuccessText.color = Color.green;
             }
-            
 
         }
     }

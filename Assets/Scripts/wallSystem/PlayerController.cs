@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using trial;
 using UnityEngine;
+using UnityEngine.Experimental.VFX;
 using UnityEngine.UI;
 using DS = data.DataSingleton;
 using E = main.Loader;

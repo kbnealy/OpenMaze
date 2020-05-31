@@ -25,7 +25,7 @@ namespace twoDSystem
         {
             _created = new List<GameObject>();
 
-            GameObject.Find("CountDown").GetComponent<Text>().text = "";
+            GameObject.Find("TrialTotal").GetComponent<Text>().text = "";
 
             var headerText = GameObject.Find("Header").GetComponent<Text>();
             headerText.GetComponent<RectTransform>().sizeDelta = new Vector2(300, 40);
