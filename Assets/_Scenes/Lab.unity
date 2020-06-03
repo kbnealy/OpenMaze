@@ -644,7 +644,7 @@ PrefabInstance:
     - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
         type: 3}
       propertyPath: m_FontData.m_Alignment
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114956003166578868, guid: 74c4ce83a253d50458c981c9ad04671c,
         type: 3}
