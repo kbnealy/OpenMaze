@@ -16,84 +16,21 @@
     "BlockOrder" : [1,2,3,4,5,6,7,8,9,10,11],
     
     "Blocks" : [
-                {
-            "Block 1" : "Welcome To the experiment + Practice: Explore Instructions",
-              "TrialOrder": [
-                 1,2,3,4,5
-                ]
-        },
         {
-            "Block 2" : "Practice: Explore the Environment Trials",
-              "TrialOrder": [
-                 6,21,20,
-                 6,21,20,
-                 6,21,20,
-                 6,21,20,
-                 6,21,20
-                ]
-        },
-        {
-            
-            "Block 3" : "Practice: Finding Money 10cents + Feedback/NoFeedback Instructions",
-              "TrialOrder": [
-                7,8,9,5,
-                18,22,
-                10,11,12,13,14
-              ]
-        },
-        {
-            "Block 4" : "Feedback No Feedback + Do you understand + Practice: Main Money Finding",
-            "ShowNumSuccessfulTrials": true,
-            "ExitFunction": "CheckFoodThresholdPercentage",
-            "ExitGoal": "4",
-              "TrialOrder": [
-                 18,23,  19,27,  15, 5,  18,23,  18,23, 
-                 19,27,  18,24,  18,24,  18,24,
-                 19,27,  18,25,  18,25,  18,25,
-                 19,27,  18,26,  18,26,  18,26,
-                 17 
-                ]
-        },
-        {
-            "Block 5" : "Circle: Explore instructions",
+            "Block 1" : "Test Session Instructions",
               "TrialOrder": [
                  16,28,29,30,31
                 ]
         },
         {
             
-            "Block 6" : "Circle: Explore The Trials",
+            "Block 6" : "Test Trials",
               "TrialOrder": [
                  32,46,45,
                  32,46,45,
                  32,46,45,
                  32,46,45,
                  32,46,45
-                ]
-        },
-        {
-            "Block 7": "Circle: Finding Money + $0.10 + Feedback/NoFeedback instructions",
-                "TrialOrder": [
-                33,34,35,31,47,36,37,38,39,40,31
-                ]
-        },
-        {
-            "Block 8": "Circle: Main Money Finding",
-                "TrialOrder": [
-                 41,48,  42,54,  41,48,  41,48,
-                 42,54,  41,49,  41,49,  41,49,  43,
-                 42,54,  41,50,  41,50,  41,50,
-                 41,51,  42,54,  41,51,  41,51,  43,
-                 41,52,  41,52,  41,52,  42,54,
-                 41,53,  41,53,  41,53,  43,
-
-                 41,48,  41,48,
-                 41,49,  42,54,  41,49,
-                 41,50,  41,50,  43,
-                 41,51,  41,51,
-                 41,52,  41,52,
-                 41,53,  41,53, 42,54, 42,54, 
-                 55,44
                 ]
         },
         {

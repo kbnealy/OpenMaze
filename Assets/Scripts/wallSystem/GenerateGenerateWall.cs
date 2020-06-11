@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using DS = data.DataSingleton;
 using E = main.Loader;
+using trial;
 using System;
 using data;
 //This script is the Generate (GenerateWall) script
