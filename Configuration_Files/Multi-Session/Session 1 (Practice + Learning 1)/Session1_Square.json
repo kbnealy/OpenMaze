@@ -476,9 +476,9 @@
         {
             "44" : "You've Completed the BONUS PAY",
             "Instructional": 1,
-            "FileLocation": "Square/17-Complete.png",
+            "FileLocation": "Square/17-CompleteS1.png",
             "TrialTime": -1,
-            "TrialEndKey": "Space"
+            "ExitButton": true
         },
         {
             "45": "2D Trial",

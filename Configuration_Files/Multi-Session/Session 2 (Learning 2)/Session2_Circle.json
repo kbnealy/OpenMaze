@@ -13,56 +13,18 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [1,2,3,4,5,6,7,8],
+    "BlockOrder" : [1,2,3,4],
     
     "Blocks" : [
-                {
-            "Block 1" : "Welcome To the experiment + Practice: Explore Instructions",
-              "TrialOrder": [
-                 1,2,3,4,5
-                ]
-        },
         {
-            "Block 2" : "Practice: Explore the Environment Trials",
+            "Block 1" : "Circle: Explore instructions",
               "TrialOrder": [
-                 6,21,20,
-                 6,21,20,
-                 6,21,20,
-                 6,21,20,
-                 6,21,20
+                 28,29,30,31
                 ]
         },
         {
             
-            "Block 3" : "Practice: Finding Money 10cents + Feedback/NoFeedback Instructions",
-              "TrialOrder": [
-                7,8,9,5,
-                18,22,
-                10,11,12,13,14
-              ]
-        },
-        {
-            "Block 4" : "Feedback No Feedback + Do you understand + Practice: Main Money Finding",
-            "ShowNumSuccessfulTrials": true,
-            "ExitFunction": "CheckFoodThresholdPercentage",
-            "ExitGoal": "4",
-              "TrialOrder": [
-                 18,23,  19,27,  15, 5,  18,23,  18,23, 
-                 19,27,  18,24,  18,24,  18,24,
-                 19,27,  18,25,  18,25,  18,25,
-                 19,27,  18,26,  18,26,  18,26,
-                 17 
-                ]
-        },
-        {
-            "Block 5" : "Circle: Explore instructions",
-              "TrialOrder": [
-                 16,28,29,30,31
-                ]
-        },
-        {
-            
-            "Block 6" : "Circle: Explore The Trials",
+            "Block 2" : "Circle: Explore The Trials",
               "TrialOrder": [
                  32,46,45,
                  32,46,45,
@@ -72,13 +34,13 @@
                 ]
         },
         {
-            "Block 7": "Circle: Finding Money + $0.10 + Feedback/NoFeedback instructions",
+            "Block 3": "Circle: Finding Money + $0.10 + Feedback/NoFeedback instructions",
                 "TrialOrder": [
                 33,34,35,31,47,36,37,38,39,40,31
                 ]
         },
         {
-            "Block 8": "Circle: Main Money Finding",
+            "Block 4": "Circle: Main Money Finding",
                 "TrialOrder": [
                  41,48,  42,54,  41,48,  41,48,
                  42,54,  41,49,  41,49,  41,49,  43,
@@ -364,7 +326,7 @@
         {
             "28" : "Section 2*********************************************************CIRCLE TRIALS",
             "Instructional": 1,
-            "FileLocation": "Circle/1-Section.png",
+            "FileLocation": "Circle/18-Session2Overview.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
@@ -476,9 +438,9 @@
         {
             "44" : "You've Completed the BONUS PAY",
             "Instructional": 1,
-            "FileLocation": "Circle/17-Complete.png",
+            "FileLocation": "Circle/19-CompleteS2.png",
             "TrialTime": -1,
-            "TrialEndKey": "Space"
+            "ExitButton": true
         },
         {
             "45": "2D Trial",
@@ -487,7 +449,6 @@
             "Scene" : 3,
             "TrialTime" : 1000,
             "TrialEndKey": "Space"
-
         }, 
         {
             "46" : "Explore Trial",
