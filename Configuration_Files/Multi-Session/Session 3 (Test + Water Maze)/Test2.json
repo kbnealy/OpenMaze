@@ -13,192 +13,175 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [1,2,3,4,5,6],
+    "BlockOrder" : [1,2,3,4,5,6,7,8],
     
-    "BlockList" : [
+    "Blocks" : [
         {
-            "BlockName" : "Block 1 - Explore",
-              "Notes" : "This is a standard block of trials.",
+            "Block 1" : "Direct Test Instructions",
               "TrialOrder": [
                  1,2,3,4,5,6
                 ]
         },
         {
             
-            "BlockName" : "Block 2 - Direct Test",
-              "Notes" : "This is a block of trials with replacement and randomness.",
+            "Block 2" : "Direct Test",
               "TrialOrder": [
-                    9,15, 9,14, 9,15, 9,14 
+                 13,15, 13,14, 13,15, 13,14, 7 
                 ]
         },
         {
-            "BlockName" : "Block 3 - Transfer Test Instructions",
-              "Notes" : "This is a standard block of trials.",
+            "Block 3" : "Transfer Test Instructions",
               "TrialOrder": [
-                 7,8,6
+                 8,9,10,6
                 ]
         },
         {
             
-            "BlockName" : "Block 4 - Transfer Test",
-              "Notes" : "This is a block of trials with replacement and randomness.",
+            "Block 4" : "Block 4 - Transfer Test",
               "TrialOrder": [
                     0,0,0,0,0
                 ],
               "Replacement" : 0,
-              "RandomTrialType" : [
-                {"RandomGroup": [9, 14]},
-                {"RandomGroup": [9, 15]},
-                {"RandomGroup": [9, 16]},
-                {"RandomGroup": [9, 17]},
-                {"RandomGroup": [9, 18]}
+              "RandomlySelect" : [
+                {"Order": [13, 14]},
+                {"Order": [13, 15]},
+                {"Order": [13, 16]},
+                {"Order": [13, 17]},
+                {"Order": [13, 18]}
               ]
         },
         {
             
-            "BlockName" : "Block 5 - Transfer Test",
-              "Notes" : "This is a block of trials with replacement and randomness.",
+            "Block 5" : "Block 5 - Transfer Test",
               "TrialOrder": [
-                    0,0,0,0,0
+                    0,0,0,0,0,12
                 ],
               "Replacement" : 0,
-              "RandomTrialType" : [
-                {"RandomGroup": [9, 14]},
-                {"RandomGroup": [9, 15]},
-                {"RandomGroup": [9, 16]},
-                {"RandomGroup": [9, 17]},
-                {"RandomGroup": [9, 18]}
+              "RandomlySelect" : [
+                {"Order": [13, 14]},
+                {"Order": [13, 15]},
+                {"Order": [13, 16]},
+                {"Order": [13, 17]},
+                {"Order": [13, 18]}
               ]
         },
         {
-            "BlockName" : "Block 6 - Transfer Test Instructions",
-              "Notes" : "This is a standard block of trials.",
-              "TrialOrder": [
-                 7,19
+            "Block 6": "WaterMaze: Visible Instructions",
+                "TrialOrder": [
+                19,20,21,22,6
+                ]
+        },
+        {
+            "Block 7": "WaterMaze: Visible Trial",
+                "TrialOrder": [
+                24,27,23
+                ]
+        },
+        {
+            "Block 8": "WaterMaze invisible Trials",
+                "TrialOrder": [
+                6, 24,28,  24,29,  24,30,  24,31,  24,32,  24,33, 24,34, 26
                 ]
         }
-
     ],
 
 "TRIAL DATA" : "TRIAL DATA--------------------*********------------------TRIAL DATA",
     
-    "TrialData": [
+    "Trials": [
         {
             "1" : "Welcome",
             "Instructional": 1,
-            "FileLocation": "Test/Welcome2.png",
-            "TrialTime": -1,
-            "TrialEndKey": "p"
-        },
-        {
-            "2" : "Controls",
-            "Instructional": 1,
-            "FileLocation": "Test/Controls.png",
-            "TrialTime": -1,
-            "TrialEndKey": "p"
-        },
-        {
-            "3" : "Rounds",
-            "Instructional": 1,
-            "FileLocation": "Test/Rounds.png",
-            "TrialTime": -1,
-            "TrialEndKey": "p"
-        },
-        {
-            "4" : "Bonus",
-            "Instructional": 1,
-            "FileLocation": "Test/Bonus.png",
-            "TrialTime": -1,
-            "TrialEndKey": "p"
-        },
-        {
-            "5" : "Hint",
-            "Instructional": 1,
-            "FileLocation": "Test/Hint.png",
-            "TrialTime": -1,
-            "TrialEndKey": "p"
-        },
-        {
-            "6" : "Questions",
-            "Instructional": 1,
-            "FileLocation": "Test/Questions.png",
+            "FileLocation": "Test/1-SessionV1.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
-            "7" : "Notify",
+            "2" : "INstructions",
             "Instructional": 1,
-            "FileLocation": "Test/Notify.png",
+            "FileLocation": "Test/3-DirectTest.png",
             "TrialTime": -1,
-            "TrialEndKey": "p"
-        },
-        {
-            "8" : "Variation",
-            "Instructional": 1,
-            "FileLocation": "Test/Variation.png",
-            "TrialTime": -1,
-            "TrialEndKey": "p"
-        },
-        {
-            "9" : "MoneyNF",
-            "Instructional": 1,
-            "FileLocation": "Test/MoneyNF.png",
-            "TrialTime": 0,
-            "TrialEndKey": "p"
-        },
-        {
-            "10" : "New",
-            "Instructional": 1,
-            "FileLocation": "Test/New.png",
-            "TrialTime": 0,
-            "TrialEndKey": "p"
-        },
-        {
-            "11": "Where were you?----------------------------------------------------------------------------------------2D/3D",
-            "TwoDimensional" : 1,
-            "Header": "Where Were You?",
-            "Scene" : 3,
-            "TrialTime" : 1000,
             "TrialEndKey": "Space"
-
-        }, 
-        {
-            "12" : "Circle - Refamiliarization",
-            "Header": "Explore!",
-            "ShowCollectedPerBlock" : false,
-            "TrialTime" : 30,
-            "Scene": 2,
-            "StartPosition" : [],
-            "StartFacing" : -1,
-            "Rotate": 0,
-            "ActiveGoals" : [],
-            "InvisibleGoals" : [],
-            "InactiveGoals" : [],
-            "MazeName": "Circle",
-            "Quota": 5000,
-            "LandMarks" :[1,2,3,4],
-            "TrialEndKey": "x"
         },
         {
-            "13" : "Square - Refamiliarization",
-            "Header": "Explore!",
-            "ShowCollectedPerBlock" : false,
-            "TrialTime" : 30,
-            "Scene": 2,
-            "StartPosition" : [],
-            "StartFacing" : -1,
-            "Rotate": 0,
-            "ActiveGoals" : [],
-            "InvisibleGoals" : [],
-            "InactiveGoals" : [],
-            "MazeName": "Square",
-            "Quota": 5000,
-            "LandMarks" :[1,2,3,4],
-            "TrialEndKey": "x"
+            "3" : "Controls",
+            "Instructional": 1,
+            "FileLocation": "Test/4-Controls.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "4" : "All No feedback rounds",
+            "Instructional": 1,
+            "FileLocation": "Test/5-DirectNF.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "5" : "Bonus Payment",
+            "Instructional": 1,
+            "FileLocation": "Test/6-DirectHint.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "6" : "Ready",
+            "Instructional": 1,
+            "FileLocation": "Test/7-Ready.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "7" : "Great Job",
+            "Instructional": 1,
+            "FileLocation": "Test/8-Great.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "8" : "Variation rounds instructions",
+            "Instructional": 1,
+            "FileLocation": "Test/9-Variations.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "9" : "Variation rounds NO Feedback",
+            "Instructional": 1,
+            "FileLocation": "Test/10-VariationsNF.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "10" : "Variations Hint!",
+            "Instructional": 1,
+            "FileLocation": "Test/11-VariationsHint.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "11" : "You Earned...",
+            "Instructional": 1,
+            "FileLocation": "Test/12-Bonus.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "12" : "Complete",
+            "Instructional": 1,
+            "FileLocation": "Test/13-Complete.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "13" : "Money No Feedback",
+            "Instructional": 1,
+            "FileLocation": "Test/14-MoneyNF.png",
+            "TrialTime": 1,
+            "TrialEndKey": "p"
         },
         {
             "14" : "Circle - No Goals",
-            "Header": "Search For Money!",
+            "Header": "Search For Money\nNo Feedback Round!",
             "ShowCollectedPerBlock" : false,
             "TrialTime" : 60,
             "Scene": 2,
@@ -208,14 +191,14 @@
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Circle",
+            "Enclosure": 2,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
-            "TrialEndKey": "x"
+            "TrialEndKey": "o"
         },
         {
             "15" : "Square - No Goals",
-            "Header": "Search For Money!",
+            "Header": "Search For Money\nNo Feedback Round!",
             "ShowCollectedPerBlock" : false,
             "TrialTime" : 60,
             "Scene": 2,
@@ -225,14 +208,14 @@
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Square",
+            "Enclosure": 3,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
-            "TrialEndKey": "x"
+            "TrialEndKey": "o"
         },
         {
             "16" : "Six - No Goals",
-            "Header": "Search For Money!",
+            "Header": "Search For Money\nNo Feedback Round!",
             "ShowCollectedPerBlock" : false,
             "TrialTime" : 60,
             "Scene": 2,
@@ -242,14 +225,14 @@
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Six",
+            "Enclosure": 4,
             "Quota": 20,
             "LandMarks" :[1,2,3,4],
-            "TrialEndKey": "x"
+            "TrialEndKey": "o"
         },
         {
             "17" : "Eight",
-            "Header": "Search For Money!",
+            "Header": "Search For Money\nNo Feedback Round!",
             "ShowCollectedPerBlock" : false,
             "TrialTime" : 60,
             "Scene": 2,
@@ -259,14 +242,14 @@
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Eight",
+            "Enclosure": 5,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
-            "TrialEndKey": "x"
+            "TrialEndKey": "o"
         },
         {
             "18" : "Twelve",
-            "Header": "Search For Money!",
+            "Header": "Search For Money\nNo Feedback Round!",
             "ShowCollectedPerBlock" : false,
             "TrialTime" : 60,
             "Scene": 2,
@@ -276,26 +259,194 @@
             "ActiveGoals" : [],
             "InvisibleGoals" : [],
             "InactiveGoals" : [],
-            "MazeName": "Twelve",
+            "Enclosure": 6,
             "Quota": 5000,
             "LandMarks" :[1,2,3,4],
-            "TrialEndKey": "x"
+            "TrialEndKey": "o"
         },
         {
-            "19" : "Twelve",
-            "Header": "You Earned $4.53!",
-            "ShowCollectedPerBlock" : false,
-            "TrialTime" : 60,
-            "Scene": 6,
-            "StartPosition" : [],
-            "StartFacing" : -1,
+            "19": "Section 3 WATERMAZE************************************************ WATERMAZE TRIALS",
+            "Instructional": 1,
+            "FileLocation": "ID/1-Section.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "20": "Find the Trophy",
+            "Instructional": 1,
+            "FileLocation": "ID/2-Find.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "21": "Controls",
+            "Instructional": 1,
+            "FileLocation": "ID/3-Controls.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "22": "Find the Trophy Visible Instructions",
+            "Instructional": 1,
+            "FileLocation": "ID/4-Visible.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "23": "Find the Trophy Invisible Instructions",
+            "Instructional": 1,
+            "FileLocation": "ID/6-Invisible.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "24": "Find the Trophy Cue",
+            "Instructional": 1,
+            "FileLocation": "ID/8-Trophy.png",
+            "TrialTime": 1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "25": "Get Ready",
+            "Instructional": 1,
+            "FileLocation": "ID/5-Ready.png",
+            "TrialTime": -1,
+            "TrialEndKey": "Space"
+        },
+        {
+            "26": "You've Completed the FIND THE TROPHY",
+            "Instructional": 1,
+            "FileLocation": "ID/7-Complete.png",
+            "TrialTime": -1,
+            "TrialEndKey": "o",
+            "ExitButton": true
+        },
+        {
+            "27": "Visible Reward Trial",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [-10, -10],
+            "StartFacing": 60,
             "Rotate": 0,
-            "ActiveGoals" : [],
-            "InvisibleGoals" : [],
-            "InactiveGoals" : [],
-            "Quota": 5000,
-            "LandMarks" :[],
-            "TrialEndKey": "x"
+            "Enclosure": 7,
+            "ActiveGoals": [11,12],
+            "InvisibleGoals": [],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "28": "Startging Position 1",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [-10, 10],
+            "StartFacing": 145,
+            "Rotate": 0,
+            "Enclosure": 7,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "29": "Starting Position 2",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [10, 10],
+            "StartFacing": 255,
+            "Rotate": 0,
+            "Enclosure": 7,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "30": "Startging Position 3",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [10, -10],
+            "StartFacing": -80,
+            "Rotate": 0,
+            "Enclosure": 7,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "31": "Startging Position 4",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [0, 0],
+            "StartFacing": 202,
+            "Rotate": 0,
+            "Enclosure": 7,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "32": "Startging Position 5",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [0, -10],
+            "StartFacing": -24,
+            "Rotate": 0,
+            "Enclosure": 7,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "33": "Startging Position 6",
+            "Header": "Find The Trophy!",
+            "TrialTime": 6000,
+            "Scene": 7,
+            "StartPosition": [-10, 0],
+            "StartFacing": 120,
+            "Rotate": 0,
+            "Enclosure": 7,
+            "ActiveGoals": [],
+            "InvisibleGoals": [12],
+            "InactiveGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
+        },
+        {
+            "34": "No Goal - 1 minute search",
+            "Header": "Find The Trophy!",
+            "TrialTime": 60,
+            "Scene": 7,
+            "StartPosition": [-10, -8],
+            "StartFacing": -20,
+            "Rotate": 0,
+            "Enclosure": 7,
+            "ActiveGoals": [],
+            "InvisibleGoals": [],
+            "Quota": 1,
+            "LandMarks": [],
+            "TrialEndKey": "o"
         }
     ],
 
@@ -304,102 +455,160 @@
 
     "Goals": [
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "Goal 1" : "Practice Location 1",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [4.1, 1, 4.75],
+            "Position": [2.6, 1, 6.5],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "Goal 2" : "Practice Location 2",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [5, 1, 6.7],
+            "Position": [8, 1, 4.5],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "Goal 3" : "Practice Location 3",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [9.7, 1, 5.7],
+            "Position": [6.7, 1, 8],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "Goal 4" : "Practice Location 4",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [8, 1, 6.5],
+            "Position": [3.8, 1, 2.72],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "Goal 5" : "Square Location 1",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [7, 1, 9],
+            "Position": [8.4, 1, 9.6],
             "Scale": [1, 1, 1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
+            "Goal 6" : "Square Location 2",
+            "Type": "3D",
+            "Object": "RewardZone",
             "Color": "ff0000",
-            "Position": [3.5, 1, 7.75],
+            "Position": [5.7, 1, 7.2],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 7" : "Square Location 3",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [4.2, 1, 8.25],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 8" : "Square Location 4",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [5.85, 1, 4.8],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 9" : "Square Location 5",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [9.3, 1, 6.45],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 10" : "Square Location 6",
+            "Type": "3D",
+            "Object": "RewardZone",
+            "Color": "ff0000",
+            "Position": [10.8, 1, 5.55],
+            "Scale": [1, 1, 1]
+        },
+        {
+            "Goal 11" : "WaterMaze Trophy",
+            "Type": "3D",
+            "Object": "Trophy",
+            "Color": "ffffff",
+            "Sound": "Success",
+            "Position": [5, 0.97, 7],
+            "Scale": [8, 8, 8]
+        },
+        {
+            "Goal 12" : "WaterMaze Reward Location",
+            "Type": "3D",
+            "Object": "Cylinder",
+            "Color": "ffffff",
+            "Sound": "Success",
+            "Position": [5, 0, 7],
+            "Scale": [3, 1, 3]
+        },
+        {
+            "Goal 13" : "Practice No Feedback",
+            "Type": "3D",
+            "Object": "RewardZoneS",
+            "Color": "ff0000",
+            "Position": [5.5, 1, 5.5],
             "Scale": [1, 1, 1]
         }
-
     ],
 
 "LANDMARK DATA" : "LANDMARK DATA----------*********------------------LANDMARK DATA",
 
     "Landmarks": [
         {
-            "Pickup 3" : "Food Image",
-            "Type": "Sphere",
+            "Landmark 1" : "Red Square",
+            "Type": "3D",
+            "Object": "Sphere",
             "Color": "ff0000",
             "Position": [30, 18, 0],
             "Scale": [0.1, 8, 8]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "Cube",
+            "Landmark 2" : "Green Square",
+            "Type": "3D",
+            "Object": "Cube",
             "Color": "00ff00",
             "Position": [0, 18, -30],
             "Scale": [8,8,0.1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "Cube",
+            "Landmark 3" : "Blue Rectangle",
+            "Type": "3D",
+            "Object": "Cube",
             "Color": "0000ff",
             "Position": [0, 16, 30],
             "Scale": [16,4,0.1]
         },
         {
-            "Pickup 3" : "Food Image",
-            "Type": "Prism",
+            "Landmark 4" : "Yellow Triangle",
+            "Type": "3D",
+            "Object": "Prism",
             "Color": "ffff00",
             "Position": [-30,14,4],
             "Rotation": [0,90,0],
             "Scale": [8, 8, 0.1]
-        },
-        {
-            "Pickup 3" : "Food Image",
-            "Type": "RewardZone",
-            "Color": "ff0000",
-            "Position": [10, 1, 10],
-            "Scale": [1, 1, 1]
         }
-
     ], 
 
-"Maze DATA" : "Maze DATA--------------------*********------------------Maze DATA",
+"Enclosure DATA" : "Enclosure DATA--------------------*********------------------Maze DATA",
 
-    "Mazes": [
+    "Enclosures": [
         {
-            "MazeName": "Square",
-            "Type": "Simple",
-            "Sides": 4,
+            "Enclosure 1": "Practice",
+            "Sides": 40,
             "Radius": 15,
             "WallHeight" : 7,
-            "WallColor": "ffffff",
+            "WallColor": "ffffff00",
             "GroundTileSides": 4,
             "GroundTileSize": 1,
             "GroundColor": "ffffff",
@@ -407,54 +616,74 @@
             "InitialRotation": 0
         },
         {
-            "MazeName": "Circle",
-            "Type": "Simple",
+            "Enclosure 2": "Circle",
             "Sides": 40,
             "Radius": 15,
             "WallHeight" : 7,
             "WallColor": "ffffff",
-            "GroundTileSides": 4,
+            "GroundTileSides": 0,
             "GroundTileSize": 1,
             "GroundColor": "ffffff",
             "Position": [0, 0],
             "InitialRotation": 0
         },
         {
-            "MazeName": "Six",
-            "Type": "Simple",
+            "Enclosure 3": "Square",
+            "Sides": 4,
+            "Radius": 15,
+            "WallHeight" : 7,
+            "WallColor": "ffffff",
+            "GroundTileSides": 0,
+            "GroundTileSize": 1,
+            "GroundColor": "ffffff",
+            "Position": [0, 0],
+            "InitialRotation": 0
+        },
+        {
+            "Enclosure 4": "Six",
             "Sides": 5,
             "Radius": 15,
             "WallHeight" : 7,
             "WallColor": "ffffff",
-            "GroundTileSides": 4,
+            "GroundTileSides": 0,
             "GroundTileSize": 1,
             "GroundColor": "ffffff",
             "Position": [0, 0],
             "InitialRotation": 0
         },
         {
-            "MazeName": "Eight",
-            "Type": "Simple",
+            "Enclosure 5": "Eight",
             "Sides": 8,
             "Radius": 15,
             "WallHeight" : 7,
             "WallColor": "ffffff",
-            "GroundTileSides": 4,
+            "GroundTileSides": 0,
             "GroundTileSize": 1,
             "GroundColor": "ffffff",
             "Position": [0, 0],
             "InitialRotation": 0
         },
         {
-            "MazeName": "Twelve",
-            "Type": "Simple",
+            "Enclosure 6": "Twenty",
             "Sides": 20,
             "Radius": 15,
             "WallHeight" : 7,
             "WallColor": "ffffff",
-            "GroundTileSides": 4,
+            "GroundTileSides": 0,
             "GroundTileSize": 1,
             "GroundColor": "ffffff",
+            "Position": [0, 0],
+            "InitialRotation": 0
+        },
+        {
+            "Enclosure 7": "WaterMaze",
+            "Sides": 5,
+            "Radius": 20,
+            "WallHeight": 3,
+            "WallColor": "000000",
+            "GroundTileSides": 4,
+            "GroundTileSize": 1,
+            "GroundColor": "000000",
             "Position": [0, 0],
             "InitialRotation": 0
         }
