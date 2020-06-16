@@ -166,7 +166,7 @@ namespace wallSystem
 
                 if(TrialProgress.GetCurrTrial().NumCollected == DS.GetData().MorrisMazeThreshold-1)
                     {
-                        TrialProgress.GetCurrTrial().TrialProgress.NumCollectedPerBlock[BlockID] += DS.GetData().MorrisMazeThreshold-1;
+                        TrialProgress.GetCurrTrial().TrialProgress.NumCollectedPerBlock[BlockID] += DS.GetData().MorrisMazeThreshold+1;
                         TrialProgress.GetCurrTrial().TrialProgress.NumSuccess++;
                     }
                 else if(TrialProgress.GetCurrTrial().NumCollected > DS.GetData().MorrisMazeThreshold)
