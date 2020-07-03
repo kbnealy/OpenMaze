@@ -511,7 +511,7 @@ RectTransform:
   m_GameObject: {fileID: 1292073527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.18784, y: 1.18784, z: 1.18784}
   m_Children:
   - {fileID: 1368040824}
   m_Father: {fileID: 741651405}
@@ -598,7 +598,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
 --- !u!114 &1292073531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a60668933a7ef540bb0093e4171e1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Url: https://redcap.utoronto.ca/surveys/?s=DTJH3KY8KM
+  Url: 
 --- !u!1 &1368040823
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Return to Suvey
+  m_Text: End Experiment
 --- !u!222 &1368040826
 CanvasRenderer:
   m_ObjectHideFlags: 0

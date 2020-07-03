@@ -154,7 +154,7 @@ namespace wallSystem
         {
             if (!other.gameObject.CompareTag("Pickup")) return;
 
-            GetComponent<AudioSource>().PlayOneShot(other.gameObject.GetComponent<PickupSound>().Sound, 10);
+            GetComponent<AudioSource>().PlayOneShot(other.gameObject.GetComponent<PickupSound>().Sound, 1);
             Destroy(other.gameObject);
 
             // Tally the number collected per current block

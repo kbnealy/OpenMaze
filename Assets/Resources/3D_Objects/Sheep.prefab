@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 415712}
   - component: {fileID: 9556122}
   m_Layer: 0
-  m_Name: SA_Animal_Sheep_Black
+  m_Name: Sheep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101614}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 1a74382f25455df4fb4d4bda7d93d9aa, type: 3}
   m_Controller: {fileID: 9100000, guid: 4f9ce2461673e044592bcbf5c24f81d8, type: 2}
   m_CullingMode: 1

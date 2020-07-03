@@ -114,6 +114,9 @@ namespace trial
 
             if (StartButton.clicked == true)
             {
+
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 // Sets the output file name as the desired one.
                 var subjectTextField = _fields[0].transform.GetComponentsInChildren<Text>()[1];
                 TrialProgress.Subject = subjectTextField.text;
@@ -138,6 +141,7 @@ namespace trial
                 Loader.LogHeaders();
 
                 Progress();
+
             }
 
         }
