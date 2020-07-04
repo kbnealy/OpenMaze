@@ -56,14 +56,14 @@
         {
             "3" : "Controls",
             "Instructional": 1,
-            "FileLocation": "Farm/Controls.png",
+            "FileLocation": "Farm/Controls2.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "4" : "Ready",
             "Instructional": 1,
-            "FileLocation": "Farm/Ready.png",
+            "FileLocation": "Farm/Ready2.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
