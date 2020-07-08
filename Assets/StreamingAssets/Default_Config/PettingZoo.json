@@ -113,9 +113,8 @@
             "StartFacing" : -1,
             "Rotate": 0,
             "ActiveGoals" : [],
-            "InvisibleGoals" : [2],
-            "InactiveGoals" : [1],
-            "Enclosure": 1,
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
             "Quota": 1,
             "LandMarks" :[],
             "TrialEndKey": "o"
@@ -329,10 +328,10 @@
     "Enclosures": [
         {
             "Enclosure 3": "Practice",
-            "Sides": 40,
-            "Radius": 15,
+            "Sides": 4,
+            "Radius": 20,
             "WallHeight" : 7,
-            "WallColor": "ffffff00",
+            "WallColor": "ffffff",
             "GroundTileSides": 4,
             "GroundTileSize": 1,
             "GroundColor": "ffffff",
