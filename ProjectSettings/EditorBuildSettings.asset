@@ -12,30 +12,15 @@ EditorBuildSettings:
     path: Assets/_Scenes/LoadingScreen.unity
     guid: c371aa8a3e024b049a4576a08b57b0b5
   - enabled: 1
-    path: Assets/_Scenes/Lab.unity
-    guid: a5bf1cdfedc27ef4389ac1fbf026d918
-  - enabled: 1
-    path: Assets/_Scenes/Lab 2D.unity
-    guid: eda1d7c52ecc7d442b1aaae9155d79b6
-  - enabled: 1
-    path: Assets/_Scenes/Pracitce.unity
-    guid: d6747ee8ec718b7409845366fe35146a
-  - enabled: 1
-    path: Assets/_Scenes/Practice 2D.unity
-    guid: 6cf0314538cb98544a94259b96e42e52
-  - enabled: 1
-    path: Assets/_Scenes/End.unity
-    guid: 71a0b7e655fbcdf4ea5acb99b89bdea3
-  - enabled: 1
-    path: Assets/_Scenes/IndividualDifference.unity
-    guid: c3df5ac901ac7714992e9f5202447b8b
-  - enabled: 1
-    path: Assets/_Scenes/~2D Environment.unity
-    guid: 2acf382e0935e644fb8eb0818fce5a3f
-  - enabled: 1
-    path: Assets/_Scenes/Farm.unity
-    guid: 3d199e6416d70034e86d45ff0e2d3a96
-  - enabled: 1
-    path: Assets/_Scenes/3D Environment.unity
+    path: Assets/_Scenes/A.unity
     guid: 63b685cf9a1411b4a9c590a0cf665bd1
+  - enabled: 1
+    path: Assets/_Scenes/A'.unity
+    guid: f1ee38e1c4bad484d997abc001659125
+  - enabled: 1
+    path: Assets/_Scenes/A' White Fences.unity
+    guid: bedc99d5008a4f64ebfd82cacabe654b
+  - enabled: 1
+    path: Assets/_Scenes/X.unity
+    guid: 69c5d17f50cc83d4098eecd721cfa3d0
   m_configObjects: {}
