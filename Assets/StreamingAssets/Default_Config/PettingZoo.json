@@ -5,8 +5,8 @@
     "MorrisMazeThreshold": 0,
     "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
     "CharacterData": {
-        "Height": 2,
-        "MovementSpeed": 10.0,
+        "Height": 1.5,
+        "MovementSpeed": 2.5,
         "RotationSpeed": 75.0,
         "DistancePickup": 2,
         "GoalRotationSpeed": 0
@@ -26,8 +26,8 @@
         {
             "Block 2" : "Feed the animals",
               "TrialOrder": [
-                 5,10,5,11,5,12,5,13,
-                 5,10,5,11,5,12,5,13,
+                 5,10,5,11,5,12,
+                 5,10,5,11,5,12,
                  8
                 ]
         }
@@ -104,7 +104,7 @@
         {
             "10" : "Cow",
             "Header": "Environment A",
-            "TrialTime" : 10,
+            "TrialTime" : 15,
             "Scene": 2,
             "StartPosition" : [0,0],
             "StartFacing" : 0,
@@ -118,8 +118,8 @@
         },
         {
             "11" : "Pig",
-            "Header": "Environment A' \n Brown Fences",
-            "TrialTime" : 10,
+            "Header": "Environment A' \n Texture",
+            "TrialTime" : 15,
             "Scene": 3,
             "StartPosition" : [0,0],
             "StartFacing" : 0,
@@ -133,8 +133,8 @@
         },
         {
             "12" : "Pig",
-            "Header": "Environment A' \n White Fences",
-            "TrialTime" : 10,
+            "Header": "Environment A' \n No Texture",
+            "TrialTime" : 15,
             "Scene": 4,
             "StartPosition" : [0,0],
             "StartFacing" : 0,
@@ -149,7 +149,7 @@
         {
             "13" : "Goat",
             "Header": "Environment X",
-            "TrialTime" : 10,
+            "TrialTime" : 15,
             "Scene": 5,
             "StartPosition" : [0,0],
             "StartFacing" : 0,
