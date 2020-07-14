@@ -5,9 +5,9 @@
     "MorrisMazeThreshold": 0,
     "CHARACTER DATA": "CHARACTER DATA----------*********-------------------CHARACTER DATA",
     "CharacterData": {
-        "Height": 1.5,
-        "MovementSpeed": 2.5,
-        "RotationSpeed": 75.0,
+        "Height": 2,
+        "MovementSpeed": 4,
+        "RotationSpeed": 60.0,
         "DistancePickup": 2,
         "GoalRotationSpeed": 0
     },
@@ -26,8 +26,8 @@
         {
             "Block 2" : "Feed the animals",
               "TrialOrder": [
-                 5,10,5,11,5,12,
-                 5,10,5,11,5,12,
+                 6,10,6,11,6,12,7,13,7,14,7,15,
+                 6,10,6,11,6,12,7,13,7,14,7,15,
                  8
                 ]
         }
@@ -53,14 +53,14 @@
         {
             "3" : "Controls",
             "Instructional": 1,
-            "FileLocation": "Farm/Controls2.png",
+            "FileLocation": "Farm/Controls.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
         {
             "4" : "Ready",
             "Instructional": 1,
-            "FileLocation": "Farm/Ready2.png",
+            "FileLocation": "Farm/Ready.png",
             "TrialTime": -1,
             "TrialEndKey": "Space"
         },
@@ -72,16 +72,16 @@
             "TrialEndKey": "Space"
         },
         {
-            "6" : "Pig",
+            "6" : "10 Seconds",
             "Instructional": 1,
-            "FileLocation": "Farm/Pig.png",
+            "FileLocation": "Farm/10S.png",
             "TrialTime": 2,
             "TrialEndKey": "Space"
         },
         {
-            "7" : "Goat",
+            "7" : "15 seconds",
             "Instructional": 1,
-            "FileLocation": "Farm/Sheep.png",
+            "FileLocation": "Farm/15S.png",
             "TrialTime": 2,
             "TrialEndKey": "Space"
         },
@@ -103,7 +103,52 @@
         }, 
         {
             "10" : "Cow",
-            "Header": "Environment A",
+            "Header": "Environment A (10s)",
+            "TrialTime" : 10,
+            "Scene": 2,
+            "StartPosition" : [0,0],
+            "StartFacing" : 0,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Quota": 1,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "11" : "Pig",
+            "Header": "Environment A' (10s)",
+            "TrialTime" : 10,
+            "Scene": 3,
+            "StartPosition" : [0,0],
+            "StartFacing" : 0,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Quota": 1,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        },
+        {
+            "12" : "Pig",
+            "Header": "Environment X (10s)",
+            "TrialTime" : 10,
+            "Scene": 4,
+            "StartPosition" : [0,0],
+            "StartFacing" : 0,
+            "Rotate": 0,
+            "ActiveGoals" : [],
+            "InvisibleGoals" : [],
+            "InactiveGoals" : [],
+            "Quota": 1,
+            "LandMarks" :[],
+            "TrialEndKey": "o"
+        }, 
+        {
+            "10" : "Cow",
+            "Header": "Environment A (15s)",
             "TrialTime" : 15,
             "Scene": 2,
             "StartPosition" : [0,0],
@@ -118,7 +163,7 @@
         },
         {
             "11" : "Pig",
-            "Header": "Environment A' \n Texture",
+            "Header": "Environment A' (15s)",
             "TrialTime" : 15,
             "Scene": 3,
             "StartPosition" : [0,0],
@@ -133,7 +178,7 @@
         },
         {
             "12" : "Pig",
-            "Header": "Environment A' \n No Texture",
+            "Header": "Environment X (15s)",
             "TrialTime" : 15,
             "Scene": 4,
             "StartPosition" : [0,0],
