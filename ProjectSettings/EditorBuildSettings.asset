@@ -12,8 +12,17 @@ EditorBuildSettings:
     path: Assets/_Scenes/LoadingScreen.unity
     guid: c371aa8a3e024b049a4576a08b57b0b5
   - enabled: 1
-    path: Assets/_Scenes/A.unity
+    path: Assets/_Scenes/A-1a.unity
     guid: 63b685cf9a1411b4a9c590a0cf665bd1
+  - enabled: 1
+    path: Assets/_Scenes/A-1b.unity
+    guid: 2689fdafeb04a5f44a3354245db397db
+  - enabled: 1
+    path: Assets/_Scenes/A-1c.unity
+    guid: 671ba919dd4bfd84498290ed33459a91
+  - enabled: 1
+    path: Assets/_Scenes/A-1d.unity
+    guid: f234fdd7225c3b34cb499b7f26d4843f
   - enabled: 1
     path: Assets/_Scenes/A'.unity
     guid: f1ee38e1c4bad484d997abc001659125
