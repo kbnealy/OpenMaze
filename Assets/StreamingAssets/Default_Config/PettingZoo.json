@@ -7,7 +7,7 @@
     "CharacterData": {
         "Height": 2,
         "MovementSpeed": 4,
-        "RotationSpeed": 60.0,
+        "RotationSpeed": 30.0,
         "DistancePickup": 2,
         "GoalRotationSpeed": 0
     },
