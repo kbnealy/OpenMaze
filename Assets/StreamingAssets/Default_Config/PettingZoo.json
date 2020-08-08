@@ -1149,7 +1149,7 @@
             "Goal 1" : "Cow",
             "Type": "3D",
             "Object": "Cube",
-            "Sound": "Success",
+            "Sound": "",
             "Color": "ff0000",
             "Rotation": [0,0,0],
             "Position": [9.5,2,-11],
