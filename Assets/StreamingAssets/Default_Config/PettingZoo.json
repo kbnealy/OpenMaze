@@ -14,7 +14,7 @@
 
 "BLOCK DATA" : "BLOCK DATA---------------------*********--------------------BLOCK DATA",   
    
-    "BlockOrder" : [2],
+    "BlockOrder" : [1,2,3],
     
     "Blocks" : [
         {
@@ -1153,7 +1153,7 @@
             "Color": "ff0000",
             "Rotation": [0,0,0],
             "Position": [9.5,2,-11],
-            "Scale": [3, 3, 3]
+            "Scale": [3.5, 3.5, 3.5]
         },
         {
             "Goal 2" : "Cow Trigger",
