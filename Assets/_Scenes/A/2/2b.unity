@@ -152,9 +152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Create: {fileID: 1056830652493150, guid: 524226f6697247f48a8bf5e6cd4e0331, type: 3}
   GenerateEnclosureFromFile: {fileID: 0}
-  Cam: {fileID: 1588127651}
+  Cam: {fileID: 0}
   Timer: {fileID: 0}
-  Player: {fileID: 938212521}
+  Player: {fileID: 0}
   currBlockId: 0
   currTrialId: 0
 --- !u!4 &50403339
@@ -1694,7 +1694,7 @@ MonoBehaviour:
           m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 1
   - m_PersistentCalls:
       m_Calls: []
   - m_PersistentCalls:
@@ -1711,6 +1711,45 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 938212526}
+        m_MethodName: Pause
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 938212526}
+        m_MethodName: Pause
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 938212526}
+        m_MethodName: Pause
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
